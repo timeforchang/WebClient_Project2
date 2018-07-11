@@ -10,10 +10,14 @@ import java.util.*;
 public class QuizSession {
     final private List<Question> questions;
     final private Map<Question, Option> userAnswers;
+    private int score;
+
+    private static int sessionType = -1;
 
     private QuizSession() {
         questions = new ArrayList<Question>();
         userAnswers = new HashMap<Question, Option>();
+        score = 0;
     }
 
     public static QuizSession createShortSession(String category, QuizDB db) {
@@ -33,4 +37,23 @@ public class QuizSession {
         return session;
     }
 
+    public List<Question> getQuestions() {
+        return questions;
+    }
+
+    public Option getUserAnswer(Question q) {
+        return userAnswers.get(q);
+    }
+
+    public void setUserAnswer(Question q, Option o) {
+        userAnswers.put(q, o);
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public boolean solvedAll() {
+        return (score == questions.size());
+    }
 }

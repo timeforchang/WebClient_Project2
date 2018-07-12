@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de8b0c9a-dacc-4e6c-9680-59e79ad9bd71" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java" afterDir="false" />
-    </list>
+    <list default="true" id="de8b0c9a-dacc-4e6c-9680-59e79ad9bd71" name="Default" comment="" />
     <ignored path="clean_version.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -75,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuizDB.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QuizDB.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/data/QuizDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            <state relative-caret-position="450">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,8 +96,8 @@
       <file leaf-file-name="QuizSession.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="268">
+              <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#680#690#0" expanded="true" />
@@ -113,15 +110,6 @@
                 <element signature="e#1901#1902#0" expanded="true" />
                 <element signature="e#1951#1952#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReflectiveCallable.java" pinned="false" current-in-tab="true">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -546,9 +534,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.QuizSessionTest.testGetScore">
+  <component name="RunManager" selected="Application.QuizTestRunner">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="QuizTestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuizTestRunner" />
+      <module name="quiz-cli" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -587,40 +580,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="QuizSessionTest.testSetUserAnswer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="quiz-cli" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="QuizSessionTest" />
-      <option name="METHOD_NAME" value="testSetUserAnswer" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="QuizSessionTest.testShortSession2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="quiz-cli" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="QuizSessionTest" />
-      <option name="METHOD_NAME" value="testShortSession2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration name="QuizSessionTest.testSolvedAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="quiz-cli" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -629,6 +588,23 @@
       <option name="MAIN_CLASS_NAME" value="QuizSessionTest" />
       <option name="METHOD_NAME" value="testSolvedAll" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="QuizTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quiz-cli" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="QuizTestSuite" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -908,18 +884,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.QuizSessionTest.testSolvedAll" />
-      <item itemvalue="JUnit.QuizSessionTest.testShortSession2" />
-      <item itemvalue="JUnit.QuizSessionTest.testSetUserAnswer" />
       <item itemvalue="JUnit.QuizSessionTest.testGetScore" />
       <item itemvalue="JUnit.QuizSessionTest" />
+      <item itemvalue="JUnit.QuizTestSuite" />
+      <item itemvalue="Application.QuizTestRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QuizTestRunner" />
+        <item itemvalue="JUnit.QuizTestSuite" />
+        <item itemvalue="JUnit.QuizSessionTest.testSolvedAll" />
         <item itemvalue="JUnit.QuizSessionTest.testGetScore" />
         <item itemvalue="JUnit.QuizSessionTest" />
-        <item itemvalue="JUnit.QuizSessionTest.testSolvedAll" />
-        <item itemvalue="JUnit.QuizSessionTest.testSetUserAnswer" />
-        <item itemvalue="JUnit.QuizSessionTest.testShortSession2" />
       </list>
     </recent_temporary>
   </component>
@@ -936,20 +912,11 @@
       <workItem from="1531329713321" duration="112000" />
       <workItem from="1531330021017" duration="552000" />
       <workItem from="1531337410438" duration="6086000" />
-      <workItem from="1531368304753" duration="2145000" />
+      <workItem from="1531368304753" duration="2390000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QuizSessionTest_testGetScore - 2018.07.12 at 00h 19m 59s.xml">
-      <configuration name="QuizSessionTest.testGetScore" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QuizSessionTest_testSolvedAll - 2018.07.12 at 00h 20m 25s.xml">
-      <configuration name="QuizSessionTest.testSolvedAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QuizSessionTest_testSolvedAll - 2018.07.12 at 00h 24m 23s.xml">
-      <configuration name="QuizSessionTest.testSolvedAll" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="QuizSessionTest_testSolvedAll - 2018.07.12 at 00h 31m 19s.xml">
       <configuration name="QuizSessionTest.testSolvedAll" configurationId="JUnit" />
     </history-entry>
@@ -971,9 +938,18 @@
     <history-entry file="QuizSessionTest_testGetScore - 2018.07.12 at 00h 39m 27s.xml">
       <configuration name="QuizSessionTest.testGetScore" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="QuizSessionTest_testGetScore - 2018.07.12 at 00h 44m 11s.xml">
+      <configuration name="QuizSessionTest.testGetScore" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuizSessionTest_testGetScore - 2018.07.12 at 00h 44m 32s.xml">
+      <configuration name="QuizSessionTest.testGetScore" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuizSessionTest_testGetScore - 2018.07.12 at 00h 44m 34s.xml">
+      <configuration name="QuizSessionTest.testGetScore" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8895000" />
+    <option name="totallyTimeSpent" value="9140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -986,6 +962,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
@@ -998,7 +975,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32772493" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32789117" />
       <window_info id="Palette&#9;" order="2" />
@@ -1038,14 +1015,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="9" />
     </breakpoint-manager>
   </component>
@@ -1380,16 +1349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/data/QuizDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/Option.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1414,10 +1373,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="268">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#680#690#0" expanded="true" />
@@ -1433,10 +1399,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/data/QuizDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="450">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

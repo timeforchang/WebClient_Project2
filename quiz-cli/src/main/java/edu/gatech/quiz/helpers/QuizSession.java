@@ -11,6 +11,7 @@ public class QuizSession {
     static private List<Question> questions;
     final private Map<Question, Option> userAnswers;
     private int score;
+    private int answered;
 
     private QuizSession() {
         questions = new ArrayList<Question>();
@@ -68,6 +69,9 @@ public class QuizSession {
             }
         }
 
+        if (!userAnswers.containsKey(q)) {
+            answered++;
+        }
         userAnswers.put(q, o);
     }
 
@@ -76,6 +80,6 @@ public class QuizSession {
     }
 
     public boolean solvedAll() {
-        return (score == questions.size());
+        return (answered == questions.size());
     }
 }

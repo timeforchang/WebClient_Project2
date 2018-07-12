@@ -13,16 +13,65 @@ public class QuizDB {
         Connection c = getConnection();
         List<String> categories = new ArrayList<>();
 
-        // Add code here
+        try {
+            String query = "SELECT title FROM categories";
+            PreparedStatement statement = c.prepareStatement(query);
+            ResultSet result = statement.executeQuery();
+
+            while (result.next()) {
+                String categoryName = result.getString("title");
+                categories.add(categoryName);
+                // System.out.println(categoryName);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
         return categories;
     }
 
     public List<Question> getCategoryQuestions(String category) {
         Connection c = getConnection();
-        List<Question> questions = new ArrayList<>();
+        List<Question> questions = null;
 
-        // Add code here
+        try {
+            String catQuery = "SELECT * FROM categories WHERE title=?";
+            PreparedStatement catStatement = c.prepareStatement(catQuery);
+            catStatement.setString(1, category);
+            ResultSet catResult = catStatement.executeQuery();
+            int catID = 0;
+
+            while (catResult.next()) {
+                catID = catResult.getInt("id");
+                questions = new ArrayList<>();
+                // System.out.println(categoryName);
+            }
+
+            String qQuery = "SELECT * FROM questions WHERE category_id=?";
+            PreparedStatement qStatement = c.prepareStatement(qQuery);
+            qStatement.setString(1, Integer.toString(catID));
+            ResultSet qResult = qStatement.executeQuery();
+
+            while (qResult.next()) {
+                String body = qResult.getString("body");
+                String explanation = qResult.getString("explanation");
+                int qID = qResult.getInt("id");
+                List<Option> options = new ArrayList<>();
+
+                String aQuery = "SELECT * FROM answers WHERE question_id=?";
+                PreparedStatement aStatement = c.prepareStatement(aQuery);
+                aStatement.setString(1, Integer.toString(qID));
+                ResultSet aResult = aStatement.executeQuery();
+
+                while (aResult.next()) {
+                    options.add(new Option(aResult.getString("body"), (aResult.getInt("correct") == 1)));
+                }
+
+                questions.add(new Question(category, body, options, explanation));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
         return questions;
     }

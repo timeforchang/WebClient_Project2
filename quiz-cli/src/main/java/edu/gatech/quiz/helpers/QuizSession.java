@@ -8,11 +8,9 @@ import java.util.*;
  * CS3300 Project 2
  */
 public class QuizSession {
-    final private List<Question> questions;
+    static private List<Question> questions;
     final private Map<Question, Option> userAnswers;
     private int score;
-
-    private static int sessionType = -1;
 
     private QuizSession() {
         questions = new ArrayList<Question>();
@@ -23,8 +21,18 @@ public class QuizSession {
     public static QuizSession createShortSession(String category, QuizDB db) {
         QuizSession session = new QuizSession();
         List<Question> allQuestions = db.getCategoryQuestions(category);
+        List<Question> questionsToShow = new ArrayList<Question>();
 
-        // Add code here
+        if (allQuestions.size() <= 10) {
+            Collections.shuffle(allQuestions);
+            setQuestions(allQuestions);
+        } else {
+            Collections.shuffle(allQuestions);
+            for (int i = 0; i < 10; i++) {
+                questionsToShow.add(allQuestions.get(i));
+            }
+            setQuestions(questionsToShow);
+        }
 
         return session;
     }
@@ -32,7 +40,9 @@ public class QuizSession {
     public static QuizSession createLongSession(String category, QuizDB db) {
         QuizSession session = new QuizSession();
 
-        // Add code here
+        List<Question> questionsToShow = db.getCategoryQuestions(category);
+        Collections.shuffle(questionsToShow);
+        setQuestions(questionsToShow);
 
         return session;
     }
@@ -41,11 +51,23 @@ public class QuizSession {
         return questions;
     }
 
+    private static void setQuestions(List<Question> list) {
+        for (Question q : list) {
+            questions.add(q);
+        }
+    }
+
     public Option getUserAnswer(Question q) {
         return userAnswers.get(q);
     }
 
     public void setUserAnswer(Question q, Option o) {
+        if (o.isCorrect()) {
+            if (!userAnswers.containsKey(q) || !userAnswers.get(q).isCorrect()) {
+                score++;
+            }
+        }
+
         userAnswers.put(q, o);
     }
 

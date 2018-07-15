@@ -1,0 +1,9 @@
+1. Develop a class (QuizCLI) that manages the command line interface for the user to complete different quizzes and perform other quiz related actions
+
+2. In the CLI, the user can select a category, with each number the user can choose corresponding to one of the categories
+
+3. After selecting a category, the user can choose either a long or short session. A user will have to answer all the questions for that category in a random order, and the user will only have to answer 10 random questions from that category (or all questions in the category if the number of questions is fewer than 10) for a short session
+
+4. During each section, the user can answer a question by entering a number corresponding to their chosen question
+
+5. After each section, the user will be able to see their score for that section, and be able to choose from the following: see wrong answer explanation; take a new quiz; see dashboard; and quit. Each option will correspond with a number that the user will enter

@@ -26,8 +26,4 @@ public class QuizCLI {
     public void run() {
         // Add code here
     }
-
-    public void printUserAnswers() {
-        System.out.println("these are the user answers:");
-    }
 }

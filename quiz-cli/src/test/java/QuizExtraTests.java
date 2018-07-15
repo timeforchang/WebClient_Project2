@@ -174,21 +174,21 @@ public class QuizExtraTests {
 
         cli.printUserAnswers();
         assertEquals(
-                "GeeQuiz: Dashboard \n" +
-                        "1) C Programming Mock Tests\t" + "0/0\n\t" +
-                        "2) C++ Programming Mock Tests\t" + "0/0\n\t" +
-                        "3) Engineering Mathematics\t" + "0/0\n\t" +
+                "GeeQuiz: Dashboard \n\t" +
+                        "1) C Programming Mock Tests\t\t\t\t" + "0/0\n\t" +
+                        "2) C++ Programming Mock Tests\t\t\t" + "0/0\n\t" +
+                        "3) Engineering Mathematics\t\t\t\t\t" + "0/0\n\t" +
                         "4) Computer Organization and Architecture\t" + "0/0\n\t" +
-                        "5) Data Structures Mock Tests\t" + "0/0\n\t" +
-                        "6) Java Programming Mock Tests\t" + "0/0\n\t" +
-                        "7) Theory of Computation Mock Tests\t" + "1/4\n\t" +
-                        "8) GATE Mock Tests\t" + "0/0\n\t" +
-                        "9) Algorithms Mock Tests\t" + "0/0\n\t" +
-                        "10) Operating Systems Mock Tests\t" + "0/0\n\t" +
-                        "11) DBMS Mock Tests\t" + "0/0\n\t" +
-                        "12) Computer Networks Mock Tests\t" + "0/0\n\t" +
-                        "13) Aptitude Mock Tests\t" + "0/0\n\t" +
-                        "14) Other Topics in Computer Science\t" + "0/0\n\n" +
+                        "5) Data Structures Mock Tests\t\t\t\t" + "0/0\n\t" +
+                        "6) Java Programming Mock Tests\t\t\t" + "0/0\n\t" +
+                        "7) Theory of Computation Mock Tests\t\t" + "1/4\n\t" +
+                        "8) GATE Mock Tests\t\t\t\t\t\t" + "0/0\n\t" +
+                        "9) Algorithms Mock Tests\t\t\t\t\t" + "0/0\n\t" +
+                        "10) Operating Systems Mock Tests\t\t\t" + "0/0\n\t" +
+                        "11) DBMS Mock Tests\t\t\t\t\t\t" + "0/0\n\t" +
+                        "12) Computer Networks Mock Tests\t\t\t" + "0/0\n\t" +
+                        "13) Aptitude Mock Tests\t\t\t\t\t" + "0/0\n\t" +
+                        "14) Other Topics in Computer Science\t\t" + "0/0\n\n" +
                         "Press any key to return: ", outContent.toString());
     }
 }

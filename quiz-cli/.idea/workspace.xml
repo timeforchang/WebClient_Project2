@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de8b0c9a-dacc-4e6c-9680-59e79ad9bd71" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/QuizExtraTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/QuizExtraTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuizExtraTests.java" afterDir="false" />
     </list>
     <ignored path="clean_version.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,29 +52,17 @@
       <file leaf-file-name="QuizDBTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/QuizDBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
+            <state relative-caret-position="273">
               <caret line="108" column="49" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuizSession.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuizExtraTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuizExtraTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/QuizExtraTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="191" column="48" selection-start-line="191" selection-start-column="48" selection-end-line="191" selection-end-column="48" />
+            <state relative-caret-position="149">
+              <caret line="117" column="31" lean-forward="true" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2041#2042#0" expanded="true" />
@@ -88,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuizCLI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="QuizCLI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="30" column="56" lean-forward="true" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+            <state relative-caret-position="255">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,7 +89,7 @@
       <file leaf-file-name="QuizSessionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/QuizSessionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="1515">
               <caret line="103" column="49" lean-forward="true" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -138,8 +124,8 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/data/QuizDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java" />
         <option value="$PROJECT_DIR$/src/test/java/QuizExtraTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java" />
       </list>
     </option>
   </component>
@@ -367,7 +353,7 @@
       <workItem from="1531368304753" duration="2390000" />
       <workItem from="1531405553596" duration="176000" />
       <workItem from="1531682024199" duration="3998000" />
-      <workItem from="1531686858964" duration="2578000" />
+      <workItem from="1531686858964" duration="2767000" />
     </task>
     <servers />
   </component>
@@ -404,7 +390,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15892000" />
+    <option name="totallyTimeSpent" value="16081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="0" />
@@ -428,10 +414,10 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.3265306" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.3265306" />
       <window_info anchor="bottom" id="CheckStyle" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3265306" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -447,6 +433,44 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Coverage" order="3" side_tool="true" visible="true" weight="0.32962668" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.3265306" />
+      <window_info anchor="right" id="Designer" order="3" />
+      <window_info anchor="bottom" id="Analysis" order="9" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.3265306" />
+      <window_info id="Build Variants" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3265306" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="CheckStyle" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.3265306" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32789117" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="SQLite Explorer" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Gradle" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
+      <window_info anchor="right" id="Database" order="11" weight="0.3297568" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32772493" />
+      <window_info id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" visible="true" weight="0.32962668" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -772,37 +796,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/QuizDBTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="108" column="49" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="30" column="56" lean-forward="true" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,9 +813,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/QuizDBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="108" column="49" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/QuizSessionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="1515">
           <caret line="103" column="49" lean-forward="true" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -828,14 +842,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/QuizExtraTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="191" column="48" selection-start-line="191" selection-start-column="48" selection-end-line="191" selection-end-column="48" />
+        <state relative-caret-position="149">
+          <caret line="117" column="31" lean-forward="true" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2041#2042#0" expanded="true" />
             <element signature="e#2092#2093#0" expanded="true" />
             <element signature="e#2208#2231#0" expanded="true" />
             <element signature="e#2823#2846#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

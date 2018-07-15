@@ -3,8 +3,9 @@
 - Task 1: Develop a class (QuizCLI) that manages the command line interface for
 the user to complete different quizzes and perform other quiz related actions.
 
-- Task 2: Develop a class (TBD) that will record and manage a history of
-different quiz sessions that the user has taken over time.
+- Task 2: Develop a class (UserAnswers) that will record and manage a history of
+the user's cumulative scores over different categories.
 
-- Task 3: Develop a class (TBD) that will keeps track of the user's responses in
-a session, allowing the user to see explanations of their wrong answers.
+- Task 3: Develop a class (QuizSessionReview) that will keeps track of the
+user's responses in a session, allowing the user to see explanations of their
+incorrectly answered questions.

@@ -1,0 +1,3 @@
+1. Develop a class (UserAnswers) that will record and manage a history of the user's cumulative scores over different categories
+
+2. When the user chooses to see user dashboard after each section, the dashboard will show the user's cumulative scores over the different categories since the user started the CLI

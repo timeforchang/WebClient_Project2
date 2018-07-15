@@ -1,0 +1,3 @@
+1. Develop a class (QuizSessionReview) that will keeps track of the user's responses in a session, allowing the user to see explanations of their incorrectly answered questions
+
+2. At the end of each session, if the user chooses to see explanation, the CLI will display each wrong answer and explanation for it one by one

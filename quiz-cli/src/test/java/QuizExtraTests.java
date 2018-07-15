@@ -1,13 +1,10 @@
 import edu.gatech.quiz.data.QuizDB;
-<<<<<<< HEAD
 import edu.gatech.quiz.ui.QuizCLI;
 import static org.junit.Assert.*;
 
 import java.util.*;
 
-=======
 import org.junit.After;
->>>>>>> bd47e0dd1e4e38176e7ea862488cfda552319aab
 import org.junit.Before;
 import org.junit.Test;
 
@@ -32,6 +29,7 @@ public class QuizExtraTests {
     @Before
     public void setUp() {
         db = new QuizDB();
+        cli = new QuizCLI(db);
     }
 
     @After
@@ -116,27 +114,17 @@ public class QuizExtraTests {
 
     @Test
     public void testUserAnswersCreate() {
-        cli = new QuizCLI(db);
         assertNotNull(cli.getUserAnswers());
     }
 
     @Test
     public void testUserAnswersGetScores() {
-        UserAnswers ua = new UserAnswers();
-        assertEquals(new HashMap<String, Integer>, ua.getScores());
+        assertEquals(new HashMap<String, Integer>, cli.getUserAnswers());
     }
 
     @Test
     public void testUserAnswersSetScores() {
-        UserAnswers ua = new UserAnswers();
-        String cat = "C Programming Mock Tests";
-        int score = 10;
-        ua.setScores(cat, score);
-        assertEquals(10, ua.getScores().get(cat));
+        cli.run();
 
-        score = 20;
-        ua.setScores(cat, score);
-        assertEquals(20, ua.getScores().get(cat));
-        assertEquals(1, ua.getScores().size());
     }
 }

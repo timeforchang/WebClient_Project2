@@ -13,6 +13,7 @@ import java.util.*;
  */
 public class QuizCLI {
     final private QuizDB db;
+    Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
        // Provide menu driven quiz access via CLI
@@ -24,5 +25,9 @@ public class QuizCLI {
 
     public void run() {
         // Add code here
+    }
+
+    public void printUserAnswers() {
+        System.out.println("these are the user answers:");
     }
 }

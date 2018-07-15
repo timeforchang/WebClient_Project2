@@ -3,6 +3,7 @@ import edu.gatech.quiz.ui.QuizCLI;
 import static org.junit.Assert.*;
 
 import java.util.*;
+import java.io.*;
 
 import org.junit.After;
 import org.junit.Before;
@@ -119,12 +120,75 @@ public class QuizExtraTests {
 
     @Test
     public void testUserAnswersGetScores() {
-        assertEquals(new HashMap<String, Integer>, cli.getUserAnswers());
+        Map<String, List<Integer>> toCompare = new HashMap<String, List<Integer>>();
+        for (String category : db.getQuestionCategories()) {
+            List<Integer> runningScore = new ArrayList<>();
+            runningScore.add(0);
+            runningScore.add(0);
+            toCompare.put(category, runningScore);
+        }
+        assertEquals(toCompare, cli.getUserAnswers());
     }
 
     @Test
     public void testUserAnswersSetScores() {
-        cli.run();
+        String cat = "Theory of Computation Mock Tests";
+        int score = 1;
+        int answered = 4;
 
+        cli.setUserAnswers(cat, score, answered);
+        Map<String, List<Integer>> toCompare = new HashMap<String, List<Integer>>();
+        for (String category : db.getQuestionCategories()) {
+            List<Integer> runningScore = new ArrayList<>();
+            runningScore.add(0);
+            runningScore.add(0);
+            toCompare.put(category, runningScore);
+        }
+        List<Integer> runningScore = new ArrayList<>();
+        runningScore.add(1);
+        runningScore.add(4);
+        toCompare.put("Theory of Computation Mock Tests", runningScore);
+
+        assertEquals(toCompare.get("Theory of Computation Mock Tests"), cli.getUserAnswers());
+
+        cat = "Theory of Computation Mock Tests";
+        score = 2;
+        answered = 4;
+
+        cli.setUserAnswers(cat, score, answered);
+
+        runningScore = new ArrayList<>();
+        runningScore.add(3);
+        runningScore.add(8);
+        toCompare.put("Theory of Computation Mock Tests", runningScore);
+        assertEquals(toCompare.get("Theory of Computation Mock Tests"), cli.getUserAnswers());
+    }
+
+    @Test
+    public void testPrintUserAnswers() {
+        String cat = "Theory of Computation Mock Tests";
+        int score = 1;
+        int answered = 4;
+
+        cli.setUserAnswers(cat, score, answered);
+
+        cli.printUserAnswers();
+        assertEquals(
+                "GeeQuiz: Dashboard \n" +
+                        "1) C Programming Mock Tests\t" + "0/0\n\t" +
+                        "2) C++ Programming Mock Tests\t" + "0/0\n\t" +
+                        "3) Engineering Mathematics\t" + "0/0\n\t" +
+                        "4) Computer Organization and Architecture\t" + "0/0\n\t" +
+                        "5) Data Structures Mock Tests\t" + "0/0\n\t" +
+                        "6) Java Programming Mock Tests\t" + "0/0\n\t" +
+                        "7) Theory of Computation Mock Tests\t" + "1/4\n\t" +
+                        "8) GATE Mock Tests\t" + "0/0\n\t" +
+                        "9) Algorithms Mock Tests\t" + "0/0\n\t" +
+                        "10) Operating Systems Mock Tests\t" + "0/0\n\t" +
+                        "11) DBMS Mock Tests\t" + "0/0\n\t" +
+                        "12) Computer Networks Mock Tests\t" + "0/0\n\t" +
+                        "13) Aptitude Mock Tests\t" + "0/0\n\t" +
+                        "14) Other Topics in Computer Science\t" + "0/0\n\n" +
+                        "Press any key to return: ", outContent.toString());
     }
 }

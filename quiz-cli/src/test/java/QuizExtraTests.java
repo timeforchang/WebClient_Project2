@@ -45,9 +45,8 @@ public class QuizExtraTests {
         System.setIn(originalIn);
     }
 
-    // Create multiple tests of the same feature/concept if testing
-    // different cases
-    // Example, testChooseCategory1 and testChooseCategory2
+
+    // TODO: Update test methods with correct arguments
 
     @Test
     public void testTitleDisplay() {
@@ -93,28 +92,27 @@ public class QuizExtraTests {
         String questionId = "1";
         String categoryId = "1";
         cli.printQuestion(questionId, categoryId);
-        assertEquals(
-                     "Q1:"
-                     "\"#include‹stdio.h›\n" +
-                     "int main()\n" +
-                     "{\n" +
-                     "    struct site\n" +
-                     "    {\n" +
-                     "        char name[] = \"GeeksQuiz\";\n" +
-                     "        int no_of_pages = 200;\n" +
-                     "    };\n" +
-                     "    struct site *ptr;\n" +
-                     "    printf(\"%d \", ptr->no_of_pages);\n" +
-                     "    printf(\"%s\", ptr->name);\n" +
-                     "    getchar();\n" +
-                     "    return 0;\n" +
-                     "}\"" +
-                     "\n\t" +
-                     "1) 200 GeeksQuiz\n\t" +
-                     "2) 200\n\t" +
-                     "3) Runtime Error\n\t" +
-                     "4) Compiler  Error\n\n" +
-                     "Please choose an answer:", outContent.toString());
+        assertEquals("Q1:\n" +
+                "#include‹stdio.h›\n"+
+                "int main()\n"+
+                "{\n"+
+                "    struct site\n"+
+                "    {\n"+
+                "        char name[] = \"GeeksQuiz\";\n"+
+                "        int no_of_pages = 200;\n"+
+                "    };\n"+
+                "    struct site *ptr;\n"+
+                "    printf(\"%d \", ptr->no_of_pages);\n"+
+                "    printf(\"%s\", ptr->name);\n"+
+                "    getchar();\n"+
+                "    return 0;\n"+
+                "}"+
+                "\n\t" +
+                "1) 200 GeeksQuiz\n\t" +
+                "2) 200\n\t" +
+                "3) Runtime Error\n\t" +
+                "4) Compiler  Error\n\n" +
+                "Please choose an answer: ", outContent.toString());
     }
 
     @Test

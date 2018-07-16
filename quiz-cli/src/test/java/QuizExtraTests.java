@@ -192,12 +192,12 @@ public class QuizExtraTests {
 
     @Test
     public void testUserAnswersGetScores() {
-        Map<String, List<Integer>> toCompare = new HashMap<String, List<Integer>>();
+        Map<Integer, List<Integer>> toCompare = new HashMap<Integer, List<Integer>>();
         for (String category : db.getQuestionCategories()) {
             List<Integer> runningScore = new ArrayList<>();
             runningScore.add(0);
             runningScore.add(0);
-            toCompare.put(category, runningScore);
+            toCompare.put(db.getQuestionCategories().indexOf(category), runningScore);
         }
         assertEquals(toCompare, cli.getUserSessionScore());
     }
@@ -209,21 +209,21 @@ public class QuizExtraTests {
         int answered = 4;
 
         cli.setSessionScore(cat, score, answered);
-        Map<String, List<Integer>> toCompare = new HashMap<String, List<Integer>>();
+        Map<Integer, List<Integer>> toCompare = new HashMap<Integer, List<Integer>>();
         for (String category : db.getQuestionCategories()) {
             List<Integer> runningScore = new ArrayList<>();
             runningScore.add(0);
             runningScore.add(0);
-            toCompare.put(category, runningScore);
+            toCompare.put(cat, runningScore);
         }
         List<Integer> runningScore = new ArrayList<>();
         runningScore.add(1);
         runningScore.add(4);
-        toCompare.put("Theory of Computation Mock Tests", runningScore);
+        toCompare.put(cat, runningScore);
 
-        assertEquals(toCompare.get("Theory of Computation Mock Tests"), cli.getUserSessionScore());
+        assertEquals(toCompare.get(cat), cli.getUserSessionScore());
 
-        cat = "Theory of Computation Mock Tests";
+        cat = 8;
         score = 2;
         answered = 4;
 
@@ -232,13 +232,13 @@ public class QuizExtraTests {
         runningScore = new ArrayList<>();
         runningScore.add(3);
         runningScore.add(8);
-        toCompare.put("Theory of Computation Mock Tests", runningScore);
-        assertEquals(toCompare.get("Theory of Computation Mock Tests"), cli.getUserSessionSciore());
+        toCompare.put(cat, runningScore);
+        assertEquals(toCompare.get(cat), cli.getUserSessionSciore());
     }
 
     @Test
     public void testPrintUserAnswers() {
-        String cat = "Theory of Computation Mock Tests";
+        int cat = 8;
         int score = 1;
         int answered = 4;
 

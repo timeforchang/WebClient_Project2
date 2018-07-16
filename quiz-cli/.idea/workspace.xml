@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de8b0c9a-dacc-4e6c-9680-59e79ad9bd71" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/test/classes/QuizExtraTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/QuizExtraTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuizExtraTests.java" afterDir="false" />
     </list>
     <ignored path="clean_version.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +41,7 @@
       <file leaf-file-name="QuizDB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/data/QuizDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="510">
               <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -52,33 +53,44 @@
       <file leaf-file-name="QuizDBTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/QuizDBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="1683">
               <caret line="108" column="49" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuizExtraTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/QuizExtraTests.java">
+      <file leaf-file-name="QuizSession.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="117" column="31" lean-forward="true" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
+            <state relative-caret-position="255">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2041#2042#0" expanded="true" />
-                <element signature="e#2092#2093#0" expanded="true" />
-                <element signature="e#2208#2231#0" expanded="true" />
-                <element signature="e#2823#2846#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuizCLI.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuizExtraTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/QuizExtraTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="144" column="32" lean-forward="true" selection-start-line="144" selection-start-column="32" selection-end-line="144" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#3369#3392#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuizCLI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="459">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,8 +101,8 @@
       <file leaf-file-name="QuizSessionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/QuizSessionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1515">
-              <caret line="103" column="49" lean-forward="true" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="49" />
+            <state relative-caret-position="1717">
+              <caret line="103" column="49" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,6 +111,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindBugs-IDEA-Workspace">
     <toolWindowEditorPreview>false</toolWindowEditorPreview>
@@ -109,7 +128,7 @@
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5933251935000" />
+        <entry key="$PROJECT_DIR$" value="6126490155697" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="413855371" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="3883967377" />
@@ -124,8 +143,9 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/data/QuizDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/QuizExtraTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Temp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/QuizExtraTests.java" />
       </list>
     </option>
   </component>
@@ -138,7 +158,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="832" />
@@ -235,14 +255,128 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/classes/edu/gatech/quiz/ui/QuizCLI.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/QuizExtraTests.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/test/classes/QuizExtraTests.class</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -256,7 +390,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.QuizCLI">
+  <component name="RunManager" selected="Application.Temp">
     <configuration name="QuizCLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.gatech.quiz.ui.QuizCLI" />
       <module name="quiz-cli" />
@@ -267,6 +401,11 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+    </configuration>
+    <configuration name="Temp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Temp" />
+      <module name="quiz-cli" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -329,9 +468,11 @@
     <list>
       <item itemvalue="JUnit.QuizExtraTests.testUserAnswersSetScores" />
       <item itemvalue="Application.QuizCLI" />
+      <item itemvalue="Application.Temp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Temp" />
         <item itemvalue="Application.QuizCLI" />
         <item itemvalue="JUnit.QuizExtraTests.testUserAnswersSetScores" />
       </list>
@@ -353,7 +494,7 @@
       <workItem from="1531368304753" duration="2390000" />
       <workItem from="1531405553596" duration="176000" />
       <workItem from="1531682024199" duration="3998000" />
-      <workItem from="1531686858964" duration="2767000" />
+      <workItem from="1531686858964" duration="2578000" />
     </task>
     <servers />
   </component>
@@ -390,85 +531,85 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16081000" />
+    <option name="totallyTimeSpent" value="15892000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="832" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.3265306" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="3" />
+      <window_info anchor="right" id="Palette" order="10" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32772493" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.3278867" />
+      <window_info id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.3265306" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.3265306" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="CheckStyle" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32570806" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="right" id="Designer" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3297568" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20788912" />
+      <window_info anchor="right" id="Gradle" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32772493" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32789117" />
-      <window_info id="Palette&#9;" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.3265306" />
-      <window_info anchor="bottom" id="CheckStyle" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3265306" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
-      <window_info anchor="right" id="Gradle" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="SQLite Explorer" order="3" />
-      <window_info id="Build Variants" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Analysis" order="7" />
+      <window_info anchor="right" id="SQLite Explorer" order="6" />
+      <window_info id="Build Variants" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Analysis" order="10" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.32962668" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3265306" />
+      <window_info anchor="bottom" id="Build" order="12" weight="0.3265306" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Coverage" order="3" side_tool="true" visible="true" weight="0.32962668" />
+      <window_info anchor="right" id="Database" order="11" weight="0.3297568" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Build" order="8" weight="0.3265306" />
-      <window_info anchor="right" id="Designer" order="3" />
-      <window_info anchor="bottom" id="Analysis" order="9" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.3265306" />
-      <window_info id="Build Variants" order="5" side_tool="true" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Build" order="12" weight="0.3265306" />
+      <window_info anchor="right" id="Designer" order="3" />
+      <window_info anchor="bottom" id="Analysis" order="10" />
+      <window_info anchor="right" id="Palette" order="10" />
+      <window_info id="Build Variants" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.3265306" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.32962668" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3265306" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="CheckStyle" order="14" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.3265306" />
-      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32789117" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32570806" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="CheckStyle" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.3265306" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="SQLite Explorer" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Gradle" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
       <window_info anchor="right" id="Database" order="11" weight="0.3297568" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Gradle" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20788912" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.3278867" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32772493" />
-      <window_info id="Palette&#9;" order="4" />
+      <window_info id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Coverage" order="10" side_tool="true" visible="true" weight="0.32962668" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
   </component>
@@ -489,13 +630,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/QuizApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/QuizTestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -747,13 +881,7 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/jre/jdk/Contents/Home/jre/lib/rt.jar!/java/util/function/Predicate.class" />
     <entry file="file://$PROJECT_DIR$/local.properties" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/Option.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -796,26 +924,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/QuizDBTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/data/QuizDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1683">
+          <caret line="108" column="49" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="255">
           <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -823,17 +941,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/QuizDBTest.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="108" column="49" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="49" />
+        <state relative-caret-position="136">
+          <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/data/QuizDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/QuizSessionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1515">
-          <caret line="103" column="49" lean-forward="true" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="49" />
+        <state relative-caret-position="1717">
+          <caret line="103" column="49" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Temp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -842,24 +990,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/QuizExtraTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="117" column="31" lean-forward="true" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
+        <state relative-caret-position="476">
+          <caret line="144" column="32" lean-forward="true" selection-start-line="144" selection-start-column="32" selection-end-line="144" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2041#2042#0" expanded="true" />
-            <element signature="e#2092#2093#0" expanded="true" />
-            <element signature="e#2208#2231#0" expanded="true" />
-            <element signature="e#2823#2846#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#3369#3392#0" expanded="true" />
           </folding>
         </state>
       </provider>

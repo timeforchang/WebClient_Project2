@@ -191,27 +191,27 @@ public class QuizCLI {
     }
 
     public void printUserScoreList() {
-        System.out.println("\nGeeQuiz: Dashboard\t");
+        System.out.print("\nGeeQuiz: Dashboard\t\n");
         int i = 1;
         for (String category : db.getQuestionCategories()) {
-            System.out.println("\t" + Integer.toString(i++) + ") " + category + "\t\t"
+            System.out.print("\n\t" + Integer.toString(i++) + ") " + category + "\t\t"
                 + userAnswers.get(category).get(0) + "/" + userAnswers.get(category).get(1));
         }
     }
 
     public String getCategoryInput() {
-            int chosen = 0;
+        int chosen = 0;
+        if (input.hasNextInt()) {
+            chosen = input.nextInt();
+        }
+
+        while (chosen > db.getQuestionCategories().size() || chosen < 1) {
+            System.out.println("Invalid category, please choose again: ");
             if (input.hasNextInt()) {
                 chosen = input.nextInt();
             }
-
-            while (chosen > db.getQuestionCategories().size() || chosen < 1) {
-                System.out.println("Invalid category, please choose again: ");
-                if (input.hasNextInt()) {
-                    chosen = input.nextInt();
-                }
-            }
-            return db.getQuestionCategories().get(chosen - 1);
+        }
+        return db.getQuestionCategories().get(chosen - 1);
     }
 
     public int getSessionInput() {

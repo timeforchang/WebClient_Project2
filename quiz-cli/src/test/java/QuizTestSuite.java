@@ -8,7 +8,8 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
     QuizDBTest.class,
-    QuizSessionTest.class
+    QuizSessionTest.class,
+    QuizExtraTests.class
 })
 
 public class QuizTestSuite {

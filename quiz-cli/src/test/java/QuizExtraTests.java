@@ -12,6 +12,7 @@ import org.junit.contrib.java.lang.system.SystemOutRule;
 import org.junit.contrib.java.lang.system.TextFromStandardInputStream;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.contrib.java.lang.system.TextFromStandardInputStream.emptyStandardInputStream;
 
 public class QuizExtraTests {
@@ -107,39 +108,31 @@ public class QuizExtraTests {
                 "\t 4) Quit\n\nPlease choose your option: ",
                 systemOutRule.getLog());
     }
-//
-//    @Test
-//    public void testEndOfQuizToExplanation() {
-//        String input = "1";
-//        inContent = new ByteArrayInputStream(input.getBytes());
-//        System.setIn(inContent);
-//        assertEquals("1", cli.getEndOfQuizInput());
-//    }
-//
-//    @Test
-//    public void testEndOfQuizToTakeNewQuiz() {
-//        String input = "2";
-//        inContent = new ByteArrayInputStream(input.getBytes());
-//        System.setIn(inContent);
-//        assertEquals("2", cli.getEndOfQuizInput());
-//    }
-//
-//    @Test
-//    public void testEndOfQuizToDashboard() {
-//        String input = "3";
-//        inContent = new ByteArrayInputStream(input.getBytes());
-//        System.setIn(inContent);
-//        assertEquals("3", cli.getEndOfQuizInput());
-//    }
-//
-//    @Test
-//    public void testEndOfQuizToQuit() {
-//        String input = "4";
-//        inContent = new ByteArrayInputStream(input.getBytes());
-//        System.setIn(inContent);
-//        assertEquals("4", cli.getEndOfQuizInput());
-//    }
-//
+
+    @Test
+    public void testEndOfQuizToExplanation() {
+        systemInRule.provideLines("1");
+        assertEquals(1, cli.getEndOfQuizInput());
+    }
+
+    @Test
+    public void testEndOfQuizToTakeNewQuiz() {
+        systemInRule.provideLines("2");
+        assertEquals(2, cli.getEndOfQuizInput());
+    }
+
+    @Test
+    public void testEndOfQuizToDashboard() {
+        systemInRule.provideLines("1");
+        assertEquals(3, cli.getEndOfQuizInput());
+    }
+
+    @Test
+    public void testEndOfQuizToQuit() {
+        systemInRule.provideLines("1");
+        assertEquals(4, cli.getEndOfQuizInput());
+    }
+
 //    @Test
 //    public void testExplanationOutput() {
 //        QuizSession quizSession = QuizSession.createShortSession("Computer Organization and Architecture", db);
@@ -154,24 +147,24 @@ public class QuizExtraTests {
 //        "3) 40 Kbits\n\t" +
 //        "4) 32 bits\n", outContent.toString());
 //    }
-//
-//    @Test
-//    public void testUserAnswersCreate() {
-//        assertNotNull(cli.getUserSessionScore());
-//    }
-//
-//    @Test
-//    public void testUserAnswersGetScores() {
-//        Map<Integer, List<Integer>> toCompare = new HashMap<Integer, List<Integer>>();
-//        for (String category : db.getQuestionCategories()) {
-//            List<Integer> runningScore = new ArrayList<>();
-//            runningScore.add(0);
-//            runningScore.add(0);
-//            toCompare.put(db.getQuestionCategories().indexOf(category), runningScore);
-//        }
-//        assertEquals(toCompare, cli.getUserSessionScore());
-//    }
-//
+
+    @Test
+    public void testUserAnswersCreate() {
+        assertNotNull(cli.getUserSessionScore());
+    }
+
+    @Test
+    public void testUserAnswersGetScores() {
+        Map<String, List<Integer>> toCompare = new HashMap<>();
+        for (String category : db.getQuestionCategories()) {
+            List<Integer> runningScore = new ArrayList<>();
+            runningScore.add(0);
+            runningScore.add(0);
+            toCompare.put(category, runningScore);
+        }
+        assertEquals(toCompare, cli.getUserSessionScore());
+    }
+
 //    @Test
 //    public void testUserAnswersSetScores() {
 //        String cat = "Theory of Computation Mock Tests";
@@ -205,32 +198,32 @@ public class QuizExtraTests {
 //        toCompare.put(cat, runningScore);
 //        assertEquals(toCompare.get(cat), cli.getUserSessionScore());
 //    }
-//
-//    @Test
-//    public void testPrintUserAnswers() {
-//        String cat = "Theory of Computation Mock Tests";
-//        int score = 1;
-//        int answered = 4;
-//
-//        cli.setUserSessionScore(cat, score, answered);
-//
-//        cli.printUserScoreList();
-//        assertEquals(
-//                "GeeQuiz: Dashboard \n\t" +
-//                        "1) C Programming Mock Tests\t\t" + "0/0\n\t" +
-//                        "2) C++ Programming Mock Tests\t\t" + "0/0\n\t" +
-//                        "3) Engineering Mathematics\t\t" + "0/0\n\t" +
-//                        "4) Computer Organization and Architecture\t\t" + "0/0\n\t" +
-//                        "5) Data Structures Mock Tests\t\t" + "0/0\n\t" +
-//                        "6) Java Programming Mock Tests\t\t" + "0/0\n\t" +
-//                        "7) Theory of Computation Mock Tests\t\t" + "1/4\n\t" +
-//                        "8) GATE Mock Tests\t\t" + "0/0\n\t" +
-//                        "9) Algorithms Mock Tests\t\t" + "0/0\n\t" +
-//                        "10) Operating Systems Mock Tests\t\t" + "0/0\n\t" +
-//                        "11) DBMS Mock Tests\t\t" + "0/0\n\t" +
-//                        "12) Computer Networks Mock Tests\t\t" + "0/0\n\t" +
-//                        "13) Aptitude Mock Tests\t\t" + "0/0\n\t" +
-//                        "14) Other Topics in Computer Science\t\t" + "0/0\n\n" +
-//                        "Press any key to return: ", outContent.toString());
-//    }
+
+    @Test
+    public void testPrintUserScoreList() {
+        String cat = "Theory of Computation Mock Tests";
+        int score = 1;
+        int answered = 4;
+
+        cli.setUserSessionScore(cat, score, answered);
+
+        cli.printUserScoreList();
+        assertEquals(
+                "\nGeeQuiz: Dashboard\t\n" +
+                        "\n\t1) C Programming Mock Tests\t\t" + "0/0" +
+                        "\n\t2) C++ Programming Mock Tests\t\t" + "0/0" +
+                        "\n\t3) Engineering Mathematics\t\t" + "0/0" +
+                        "\n\t4) Computer Organization and Architecture\t\t" + "0/0" +
+                        "\n\t5) Data Structures Mock Tests\t\t" + "0/0" +
+                        "\n\t6) Java Programming Mock Tests\t\t" + "0/0" +
+                        "\n\t7) Theory of Computation Mock Tests\t\t" + "1/4" +
+                        "\n\t8) GATE Mock Tests\t\t" + "0/0" +
+                        "\n\t9) Algorithms Mock Tests\t\t" + "0/0" +
+                        "\n\t10) Operating Systems Mock Tests\t\t" + "0/0" +
+                        "\n\t11) DBMS Mock Tests\t\t" + "0/0" +
+                        "\n\t12) Computer Networks Mock Tests\t\t" + "0/0" +
+                        "\n\t13) Aptitude Mock Tests\t\t" + "0/0" +
+                        "\n\t14) Other Topics in Computer Science\t\t" + "0/0",
+                        systemOutRule.getLog());
+    }
 }

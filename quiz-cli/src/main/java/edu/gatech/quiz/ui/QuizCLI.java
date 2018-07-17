@@ -91,9 +91,9 @@ public class QuizCLI {
     }
 
     public void printWelcome() {
-        System.out.println("Welcome to GeeQuiz, a Computer Science quiz app!\n\n" +
+        System.out.print("Welcome to GeeQuiz, a Computer Science quiz app!\n\n" +
                 "Please choose a question category from the list " +
-                "below:");
+                "below:\n");
     }
 
     public void printCategoryMenu() {
@@ -233,13 +233,6 @@ public class QuizCLI {
         int chosen = 0;
         if(input.hasNextInt()) {
             chosen = input.nextInt();
-        }
-
-        while (chosen > 4 || chosen < 1) {
-            System.out.println("Invalid option, please choose again: ");
-            if (input.hasNextInt()) {
-                chosen = input.nextInt();
-            }
         }
         return chosen;
     }

@@ -45,7 +45,7 @@ public class QuizCLI {
         List<Question> questions = quizSession.getQuestions();
         int qNum = 1;
         for (Question q: questions) {
-            printQuestion(quizSession, q, qNum);
+            printQuestion(q, qNum);
             int answer = getQuestionInput(quizSession);
             quizSession.setUserAnswer(q, q.getOptions().get(answer - 1));
             qNum++;
@@ -68,7 +68,7 @@ public class QuizCLI {
         System.out.println(output.toString());
     }
 
-    public void printQuestion(QuizSession session, Question question, int qNum){
+    public void printQuestion(Question question, int qNum){
         StringBuilder output = new StringBuilder();
 
         output.append("Q").append(qNum).append(":\n");
@@ -78,8 +78,6 @@ public class QuizCLI {
             output.append(i).append(") ").append(options.get(i - 1).getOptionText()).append("\n");
         }
         output.append("\nPlease choose an answer: ");
-
-
         System.out.print(output.toString());
     }
 

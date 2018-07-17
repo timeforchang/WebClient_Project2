@@ -35,22 +35,44 @@ public class QuizCLI {
 
     public void run() {
         String userReply;
+        boolean stillPlaying = true;
+        while (stillPlaying) {
 
-
-        printWelcome();
-        printCategoryMenu();
-        userReply = getCategoryInput();
-        System.out.println("Selected category: " + userReply);
-        QuizSession quizSession = QuizSession.createShortSession(userReply, db);
-        List<Question> questions = quizSession.getQuestions();
-        int qNum = 1;
-        for (Question q: questions) {
-            printQuestion(q, qNum);
-            int answer = getQuestionInput();
-            quizSession.setUserAnswer(q, q.getOptions().get(answer - 1));
-            qNum++;
+            printWelcome();
+            printCategoryMenu();
+            userReply = getCategoryInput();
+            System.out.println("Selected category: " + userReply);
+            QuizSession quizSession = QuizSession.createShortSession(userReply, db);
+            List<Question> questions = quizSession.getQuestions();
+            int qNum = 1;
+            for (Question q : questions) {
+                printQuestion(q, qNum);
+                int answer = getQuestionInput();
+                quizSession.setUserAnswer(q, q.getOptions().get(answer - 1));
+                qNum++;
+            }
+            printEndOfQuiz(quizSession);
+            boolean onEndOfQuiz = true;
+            while (onEndOfQuiz) {
+                int decision = getEndOfQuizInput();
+                switch (decision) {
+                    case 1:
+                        printQuizExplanation(quizSession);
+                        break;
+                    case 2:
+                        onEndOfQuiz = false;
+                        break;
+                    case 3:
+                        printUserScoreList();
+                        System.out.println("\nPress enter when you are done and you will be brought to category menu.");
+                        input.nextLine();
+                    case 4:
+                        stillPlaying = false;
+                    default:
+                        System.out.print("Invalid input. Try again:");
+                }
+            }
         }
-        printEndOfQuiz(quizSession);
     }
 
     public void printWelcome() {

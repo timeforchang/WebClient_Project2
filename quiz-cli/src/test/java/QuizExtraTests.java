@@ -123,13 +123,13 @@ public class QuizExtraTests {
 
     @Test
     public void testEndOfQuizToDashboard() {
-        systemInRule.provideLines("1");
+        systemInRule.provideLines("3");
         assertEquals(3, cli.getEndOfQuizInput());
     }
 
     @Test
     public void testEndOfQuizToQuit() {
-        systemInRule.provideLines("1");
+        systemInRule.provideLines("4");
         assertEquals(4, cli.getEndOfQuizInput());
     }
 

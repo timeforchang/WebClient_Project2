@@ -103,7 +103,7 @@ public class QuizCLI {
             output.append("\t").append(i).append(") ").append(categories.get(i - 1)).append("\n");
         }
         output.append("\nPlease choose a category: ");
-        System.out.println(output.toString());
+        System.out.print(output.toString());
     }
 
     public void printChooseSession() {
@@ -112,7 +112,7 @@ public class QuizCLI {
         output.append("\t1) Long session\n");
         output.append("\t2) Short session\n");
         output.append("\nPlease choose a category: ");
-        System.out.println(output.toString());
+        System.out.print(output.toString());
     }
 
     public void printQuestion(Question question, int qNum){
@@ -137,7 +137,7 @@ public class QuizCLI {
                 "\t 2) Take a new quiz\n" +
                 "\t 3) See dashboard\n" +
                 "\t 4) Quit\n\nPlease choose your option: ";
-        System.out.println(output);
+        System.out.print(output);
     }
 
     public void printQuizExplanation(QuizSession session){
@@ -149,14 +149,18 @@ public class QuizCLI {
             output.append(q.getBodyText()).append("\n\n");
             output.append(q.getExplanation()).append("\n\n");
             List<Option> options = q.getOptions();
+
+            Option userOption = session.getUserAnswer(q);
+
             int optionNumber = 1;
             for (Option o : options) {
                 output.append(optionNumber).append(") ").append(o.getOptionText());
                 if (o.isCorrect()) {
-                    output.append(" (Correct)\n");
-                } else {
-                    output.append(" (Wrong) \n");
+                    output.append(" (Correct)");
+                } else if (o == userOption) {
+                    output.append(" (Wrong)");
                 }
+                output.append("\n");
                 optionNumber++;
             }
             output.append("\n");
@@ -178,10 +182,10 @@ public class QuizCLI {
             userAnswers.put(category, toPut);
         } else {
             List<Integer> toPut = new ArrayList<Integer>();
-            toPut.add(score);
+            int previousCorrectScore = userAnswers.get(category).get(0);
             int previouslyAnswered = userAnswers.get(category).get(1);
+            toPut.add(score + previousCorrectScore);
             toPut.add((answered + previouslyAnswered));
-
             userAnswers.put(category, toPut);
         }
     }

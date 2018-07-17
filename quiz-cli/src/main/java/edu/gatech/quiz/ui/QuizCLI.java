@@ -46,10 +46,11 @@ public class QuizCLI {
         int qNum = 1;
         for (Question q: questions) {
             printQuestion(q, qNum);
-            int answer = getQuestionInput(quizSession);
+            int answer = getQuestionInput();
             quizSession.setUserAnswer(q, q.getOptions().get(answer - 1));
             qNum++;
         }
+        printEndOfQuiz(quizSession);
     }
 
     public void printWelcome() {
@@ -154,7 +155,7 @@ public class QuizCLI {
             return db.getQuestionCategories().get(chosen - 1);
     }
 
-    public int getQuestionInput(QuizSession quizSession) {
+    public int getQuestionInput() {
         int chosen = 1;
         if(input.hasNextInt()) {
             chosen = input.nextInt();
@@ -162,7 +163,11 @@ public class QuizCLI {
         return chosen;
     }
 
-    public String getEndOfQuizInput() {
-        return null;
+    public int getEndOfQuizInput() {
+        int chosen = 1;
+        if(input.hasNextInt()) {
+            chosen = input.nextInt();
+        }
+        return chosen;
     }
 }

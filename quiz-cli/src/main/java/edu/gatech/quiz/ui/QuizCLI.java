@@ -40,7 +40,7 @@ public class QuizCLI {
         printWelcome();
         printCategoryMenu();
         userReply = getCategoryInput();
-        System.out.println("Selected category: " + userReply);
+        System.out.println("Selected category: " + userReply + "\n");
         QuizSession quizSession = QuizSession.createShortSession(userReply, db);
         printQuestion(quizSession, 1); // Test output
     }

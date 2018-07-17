@@ -35,6 +35,13 @@ public class QuizCLI {
 
     public void run() {
         String userReply;
+
+        printWelcome();
+        printCategoryMenu();
+        userReply = getCategoryInput();
+        System.out.println("Selected category: " + userReply + "\n");
+        QuizSession quizSession = QuizSession.createShortSession(userReply, db);
+        printQuestion(quizSession, 1); // Test output
         boolean stillPlaying = true;
         while (stillPlaying) {
 

@@ -23,6 +23,12 @@ public class QuizCLI {
     public QuizCLI(QuizDB db) {
         this.db = db;
         userAnswers = new HashMap<String, List<Integer>>();
+        for (String category : db.getQuestionCategories()) {
+            List<Integer> toPut = new ArrayList<Integer>();
+            toPut.add(0);
+            toPut.add(0);
+            userAnswers.put(category, toPut);
+        }
     }
 
     public void run() {

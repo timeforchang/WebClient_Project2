@@ -204,12 +204,12 @@ public class QuizExtraTests {
 
     @Test
     public void testUserAnswersSetScores() {
-        int cat = 8;
+        String cat = "Theory of Computation Mock Tests";
         int score = 1;
         int answered = 4;
 
-        cli.setSessionScore(cat, score, answered);
-        Map<Integer, List<Integer>> toCompare = new HashMap<Integer, List<Integer>>();
+        cli.setUserSessionScore(cat, score, answered);
+        Map<String, List<Integer>> toCompare = new HashMap<String, List<Integer>>();
         for (String category : db.getQuestionCategories()) {
             List<Integer> runningScore = new ArrayList<>();
             runningScore.add(0);
@@ -223,7 +223,7 @@ public class QuizExtraTests {
 
         assertEquals(toCompare.get(cat), cli.getUserSessionScore());
 
-        cat = 8;
+        cat = "Theory of Computation Mock Tests";
         score = 2;
         answered = 4;
 
@@ -233,33 +233,33 @@ public class QuizExtraTests {
         runningScore.add(3);
         runningScore.add(8);
         toCompare.put(cat, runningScore);
-        assertEquals(toCompare.get(cat), cli.getUserSessionSciore());
+        assertEquals(toCompare.get(cat), cli.getUserSessionScore());
     }
 
     @Test
     public void testPrintUserAnswers() {
-        int cat = 8;
+        String cat = "Theory of Computation Mock Tests";
         int score = 1;
         int answered = 4;
 
-        cli.setSessionScore(cat, score, answered);
+        cli.setUserSessionScore(cat, score, answered);
 
         cli.printUserScoreList();
         assertEquals(
                 "GeeQuiz: Dashboard \n\t" +
-                        "1) C Programming Mock Tests\t\t\t\t" + "0/0\n\t" +
-                        "2) C++ Programming Mock Tests\t\t\t" + "0/0\n\t" +
-                        "3) Engineering Mathematics\t\t\t\t\t" + "0/0\n\t" +
-                        "4) Computer Organization and Architecture\t" + "0/0\n\t" +
-                        "5) Data Structures Mock Tests\t\t\t\t" + "0/0\n\t" +
-                        "6) Java Programming Mock Tests\t\t\t" + "0/0\n\t" +
+                        "1) C Programming Mock Tests\t\t" + "0/0\n\t" +
+                        "2) C++ Programming Mock Tests\t\t" + "0/0\n\t" +
+                        "3) Engineering Mathematics\t\t" + "0/0\n\t" +
+                        "4) Computer Organization and Architecture\t\t" + "0/0\n\t" +
+                        "5) Data Structures Mock Tests\t\t" + "0/0\n\t" +
+                        "6) Java Programming Mock Tests\t\t" + "0/0\n\t" +
                         "7) Theory of Computation Mock Tests\t\t" + "1/4\n\t" +
-                        "8) GATE Mock Tests\t\t\t\t\t\t" + "0/0\n\t" +
-                        "9) Algorithms Mock Tests\t\t\t\t\t" + "0/0\n\t" +
-                        "10) Operating Systems Mock Tests\t\t\t" + "0/0\n\t" +
-                        "11) DBMS Mock Tests\t\t\t\t\t\t" + "0/0\n\t" +
-                        "12) Computer Networks Mock Tests\t\t\t" + "0/0\n\t" +
-                        "13) Aptitude Mock Tests\t\t\t\t\t" + "0/0\n\t" +
+                        "8) GATE Mock Tests\t\t" + "0/0\n\t" +
+                        "9) Algorithms Mock Tests\t\t" + "0/0\n\t" +
+                        "10) Operating Systems Mock Tests\t\t" + "0/0\n\t" +
+                        "11) DBMS Mock Tests\t\t" + "0/0\n\t" +
+                        "12) Computer Networks Mock Tests\t\t" + "0/0\n\t" +
+                        "13) Aptitude Mock Tests\t\t" + "0/0\n\t" +
                         "14) Other Topics in Computer Science\t\t" + "0/0\n\n" +
                         "Press any key to return: ", outContent.toString());
     }

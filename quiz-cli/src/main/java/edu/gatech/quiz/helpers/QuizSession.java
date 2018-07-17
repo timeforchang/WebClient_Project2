@@ -79,6 +79,10 @@ public class QuizSession {
         return score;
     }
 
+    public int getAnswered() {
+        return answered;
+    }
+
     public boolean solvedAll() {
         return (answered == questions.size());
     }

@@ -14,6 +14,7 @@ import java.util.*;
 public class QuizCLI {
     final private QuizDB db;
     Scanner input = new Scanner(System.in);
+    Map<String, List<Integer>> userAnswers;
 
     public static void main(String[] args) {
        // Provide menu driven quiz access via CLI
@@ -21,6 +22,7 @@ public class QuizCLI {
 
     public QuizCLI(QuizDB db) {
         this.db = db;
+        userAnswers = new HashMap<String, List<Integer>>();
     }
 
     public void run() {
@@ -72,5 +74,36 @@ public class QuizCLI {
 
     public void printQuizExplanation(QuizSession session){
 
+    }
+
+    public Map<String, List<Integer>> getUserSessionScore() {
+        return userAnswers;
+    }
+
+    public void setUserSessionScore(String category, int score, int answered) {
+        if (!userAnswers.containsKey(category)) {
+            List<Integer> toPut = new ArrayList<Integer>();
+            toPut.add(score);
+            toPut.add(answered);
+
+            userAnswers.put(category, toPut);
+        } else {
+            List<Integer> toPut = new ArrayList<Integer>();
+            toPut.add(score);
+            int previouslyAnswered = userAnswers.get(category).get(1);
+            toPut.add((answered + previouslyAnswered));
+
+            userAnswers.put(category, toPut);
+        }
+    }
+
+    public void printUserScoreList() {
+        System.out.println("GeeQuiz: Dashboard \n\t");
+        int i = 1;
+        for (String category : db.getQuestionCategories()) {
+            System.out.println(Integer.toString(i++) + ") " + category + "\t\t"
+                + userAnswers.get(category).get(0) + "/" + userAnswers.get(category).get(1) + "\n\t");
+        }
+        System.out.println("Press any key to return: ");
     }
 }

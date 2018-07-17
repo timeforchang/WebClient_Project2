@@ -51,25 +51,32 @@ public class QuizCLI {
                 quizSession.setUserAnswer(q, q.getOptions().get(answer - 1));
                 qNum++;
             }
-            printEndOfQuiz(quizSession);
+
             boolean onEndOfQuiz = true;
             while (onEndOfQuiz) {
+                printEndOfQuiz(quizSession);
                 int decision = getEndOfQuizInput();
                 switch (decision) {
                     case 1:
                         printQuizExplanation(quizSession);
+                        input.nextLine();
+                        input.nextLine();
                         break;
                     case 2:
                         onEndOfQuiz = false;
                         break;
                     case 3:
                         printUserScoreList();
-                        System.out.println("\nPress enter when you are done and you will be brought to category menu.");
                         input.nextLine();
+                        input.nextLine();
+                        break;
                     case 4:
                         stillPlaying = false;
+                        onEndOfQuiz = false;
+                        break;
                     default:
                         System.out.print("Invalid input. Try again:");
+                        break;
                 }
             }
         }

@@ -36,49 +36,58 @@ public class QuizCLI {
     public void run() {
         String userReply;
 
-        printWelcome();
-        printCategoryMenu();
-        userReply = getCategoryInput();
-        System.out.println("Selected category: " + userReply + "\n");
-        QuizSession quizSession = QuizSession.createShortSession(userReply, db);
-        printQuestion(quizSession, 1); // Test output
         boolean stillPlaying = true;
         while (stillPlaying) {
-
             printWelcome();
             printCategoryMenu();
             userReply = getCategoryInput();
-            System.out.println("Selected category: " + userReply);
-            QuizSession quizSession = QuizSession.createShortSession(userReply, db);
+            System.out.println("\n\nSelected category: " + userReply);
+            printChooseSession();
+            int sessionChoice = getSessionInput();
+            QuizSession quizSession;
+            if (sessionChoice == 1) {
+                quizSession = QuizSession.createLongSession(userReply, db);
+            } else {
+                quizSession = QuizSession.createShortSession(userReply, db);
+            }
+
             List<Question> questions = quizSession.getQuestions();
             int qNum = 1;
             for (Question q : questions) {
+                System.out.println("\n");
                 printQuestion(q, qNum);
                 int answer = getQuestionInput();
                 quizSession.setUserAnswer(q, q.getOptions().get(answer - 1));
                 qNum++;
             }
-            printEndOfQuiz(quizSession);
+            setUserSessionScore(userReply, quizSession.getScore(), quizSession.getAnswered());
             boolean onEndOfQuiz = true;
-            while (onEndOfQuiz) {
-                int decision = getEndOfQuizInput();
+            int decision;
+            do {
+                printEndOfQuiz(quizSession);
+                decision = getEndOfQuizInput();
                 switch (decision) {
                     case 1:
                         printQuizExplanation(quizSession);
+                        System.out.println("See explanations for each question above.\n");
                         break;
                     case 2:
                         onEndOfQuiz = false;
                         break;
                     case 3:
                         printUserScoreList();
-                        System.out.println("\nPress enter when you are done and you will be brought to category menu.");
-                        input.nextLine();
+                        System.out.println("\nSee running total of scores above.\n");
+                        break;
                     case 4:
                         stillPlaying = false;
+                        System.out.println("Terminating.\n");
+                        System.exit(0);
+                        break;
                     default:
-                        System.out.print("Invalid input. Try again:");
+                        System.out.print("Invalid input. Try again: ");
+                        break;
                 }
-            }
+            } while (onEndOfQuiz);
         }
     }
 
@@ -98,11 +107,20 @@ public class QuizCLI {
         System.out.println(output.toString());
     }
 
+    public void printChooseSession() {
+        StringBuilder output = new StringBuilder();
+        output.append("\n\nPlease choose a session: \n");
+        output.append("\t1) Long session\n");
+        output.append("\t2) Short session\n");
+        output.append("\nPlease choose a category: ");
+        System.out.println(output.toString());
+    }
+
     public void printQuestion(Question question, int qNum){
         StringBuilder output = new StringBuilder();
 
         output.append("Q").append(qNum).append(":\n");
-        output.append(question.getBodyText()).append("\n");
+        output.append(question.getBodyText()).append("\n\n");
         List<Option> options = question.getOptions();
         for(int i = 1; i <= options.size(); i++) {
             output.append(i).append(") ").append(options.get(i - 1).getOptionText()).append("\n");
@@ -112,7 +130,7 @@ public class QuizCLI {
     }
 
     public void printEndOfQuiz(QuizSession session) {
-        String output = "Your score in this session:" +
+        String output = "Your score in this session: " +
                 session.getScore() + "/" +
                 session.getQuestions().size() + "\n\n" +
                 "Please choose any of the following options:\n" +
@@ -124,22 +142,25 @@ public class QuizCLI {
     }
 
     public void printQuizExplanation(QuizSession session){
-        StringBuilder output = new StringBuilder("GeeQuiz\n");
+        StringBuilder output = new StringBuilder("\nGeeQuiz Answer Explanations: \n");
         List <Question> questions = session.getQuestions();
         int questionNumber = 1;
         for (Question q: questions) {
-            output.append("Q").append(questionNumber).append(":\n");
+            output.append("Q").append(questionNumber).append(": ");
             output.append(q.getBodyText()).append("\n\n");
             output.append(q.getExplanation()).append("\n\n");
             List<Option> options = q.getOptions();
             int optionNumber = 1;
             for (Option o : options) {
                 output.append(optionNumber).append(") ").append(o.getOptionText());
-                if (o.isCorrect())
-                    output.append(" (Correct)");
-                // Todo: Add (Wrong) for when user answer is not the correct option
+                if (o.isCorrect()) {
+                    output.append(" (Correct)\n");
+                } else {
+                    output.append(" (Wrong) \n");
+                }
                 optionNumber++;
             }
+            output.append("\n");
             questionNumber++;
         }
         System.out.println(output.toString());
@@ -167,33 +188,61 @@ public class QuizCLI {
     }
 
     public void printUserScoreList() {
-        System.out.println("GeeQuiz: Dashboard \n\t");
+        System.out.println("\nGeeQuiz: Dashboard\t");
         int i = 1;
         for (String category : db.getQuestionCategories()) {
-            System.out.println(Integer.toString(i++) + ") " + category + "\t\t"
-                + userAnswers.get(category).get(0) + "/" + userAnswers.get(category).get(1) + "\n\t");
+            System.out.println("\t" + Integer.toString(i++) + ") " + category + "\t\t"
+                + userAnswers.get(category).get(0) + "/" + userAnswers.get(category).get(1));
         }
-        System.out.println("Press any key to return: ");
     }
 
     public String getCategoryInput() {
-            int chosen = 1;
-            if(input.hasNextInt()) {
+            int chosen = 0;
+            if (input.hasNextInt()) {
                 chosen = input.nextInt();
+            }
+
+            while (chosen > db.getQuestionCategories().size() || chosen < 1) {
+                System.out.println("Invalid category, please choose again: ");
+                if (input.hasNextInt()) {
+                    chosen = input.nextInt();
+                }
             }
             return db.getQuestionCategories().get(chosen - 1);
     }
 
+    public int getSessionInput() {
+        int chosen = 0;
+        if (input.hasNextInt()) {
+            chosen = input.nextInt();
+        }
+
+        while (chosen > 2 || chosen < 1) {
+            System.out.println("Invalid session choice, please choose again: ");
+            if (input.hasNextInt()) {
+                chosen = input.nextInt();
+            }
+        }
+        return chosen;
+    }
+
     public int getQuestionInput() {
-        int chosen = 1;
+        int chosen = 0;
         if(input.hasNextInt()) {
             chosen = input.nextInt();
+        }
+
+        while (chosen > 4 || chosen < 1) {
+            System.out.println("Invalid option, please choose again: ");
+            if (input.hasNextInt()) {
+                chosen = input.nextInt();
+            }
         }
         return chosen;
     }
 
     public int getEndOfQuizInput() {
-        int chosen = 1;
+        int chosen = 0;
         if(input.hasNextInt()) {
             chosen = input.nextInt();
         }

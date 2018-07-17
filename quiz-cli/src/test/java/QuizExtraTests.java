@@ -91,7 +91,7 @@ public class QuizExtraTests {
         // Parameter represents the question #
         String questionId = "1";
         String categoryId = "1";
-        cli.printQuestion(questionId, categoryId);
+        //cli.printQuestion(questionId, categoryId);
         assertEquals("Q1:\n" +
                 "#include‹stdio.h›\n"+
                 "int main()\n"+
@@ -120,14 +120,13 @@ public class QuizExtraTests {
         String input = "4";
         inContent = new ByteArrayInputStream(input.getBytes());
         System.setIn(inContent);
-        String questionId = "1";
-        assertEquals("4", cli.getQuestionInput(questionId));
+        assertEquals("4", cli.getQuestionInput());
     }
 
     @Test
     public void testEndOfQuizScore() {
         String categoryId = "1";
-        cli.printEndOfQuiz(categoryId);
+        //cli.printEndOfQuiz(categoryId);
         assertEquals(
                 "Your score in this session: 0/10\n\n" +
                 "Please choose any of the following options:\n" +
@@ -175,7 +174,7 @@ public class QuizExtraTests {
         QuizSession quizSession = QuizSession.createShortSession("Computer Organization and Architecture", db);
         Question question = quizSession.getQuestions().get(2);
         Option userOption = quizSession.getUserAnswer(question);
-        cli.printQuizExplanation(quizSession, question, userOption);
+        //cli.printQuizExplanation(quizSession, question, userOption);
         assertEquals("GeeQuiz\n" +
         "The size of the cache tag directory is\n\n" +
         "16 bit address   2 bit valid   1 modified   1 replace  Total bits  = 20 20 × no. of blocks   = 160 K bits.\n\n\t" +

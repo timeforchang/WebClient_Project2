@@ -17,7 +17,9 @@ public class QuizCLI {
     Map<String, List<Integer>> userAnswers;
 
     public static void main(String[] args) {
-       // Provide menu driven quiz access via CLI
+        QuizDB database = new QuizDB();
+        QuizCLI cli = new QuizCLI(database);
+        cli.run();
     }
 
     public QuizCLI(QuizDB db) {
@@ -26,7 +28,15 @@ public class QuizCLI {
     }
 
     public void run() {
-        // Add code here
+        String userReply;
+
+
+        printWelcome();
+        printCategoryMenu();
+        userReply = getCategoryInput();
+        System.out.println("Selected category: " + userReply);
+        QuizSession quizSession = QuizSession.createShortSession(userReply, db);
+        printQuestion(quizSession, 1); // Test output
     }
 
     public void printWelcome() {
@@ -52,7 +62,7 @@ public class QuizCLI {
         output.append(question.getBodyText()).append("\n");
         List<Option> options = question.getOptions();
         for(int i = 1; i <= options.size(); i++) {
-            output.append(i).append(") ").append(options.get(i - 1)).append("\n");
+            output.append(i).append(") ").append(options.get(i - 1).getOptionText()).append("\n");
         }
         output.append("\nPlease choose an answer: ");
 
@@ -73,7 +83,25 @@ public class QuizCLI {
     }
 
     public void printQuizExplanation(QuizSession session){
-
+        StringBuilder output = new StringBuilder("GeeQuiz\n");
+        List <Question> questions = session.getQuestions();
+        int questionNumber = 1;
+        for (Question q: questions) {
+            output.append("Q").append(questionNumber).append(":\n");
+            output.append(q.getBodyText()).append("\n\n");
+            output.append(q.getExplanation()).append("\n\n");
+            List<Option> options = q.getOptions();
+            int optionNumber = 1;
+            for (Option o : options) {
+                output.append(optionNumber).append(") ").append(o.getOptionText());
+                if (o.isCorrect())
+                    output.append(" (Correct)");
+                // Todo: Add (Wrong) for when user answer is not the correct option
+                optionNumber++;
+            }
+            questionNumber++;
+        }
+        System.out.println(output.toString());
     }
 
     public Map<String, List<Integer>> getUserSessionScore() {
@@ -105,5 +133,21 @@ public class QuizCLI {
                 + userAnswers.get(category).get(0) + "/" + userAnswers.get(category).get(1) + "\n\t");
         }
         System.out.println("Press any key to return: ");
+    }
+
+    public String getCategoryInput() {
+            int chosen = 1;
+            if(input.hasNextInt()) {
+                chosen = input.nextInt();
+            }
+            return db.getQuestionCategories().get(chosen - 1);
+    }
+
+    public String getQuestionInput() {
+        return null;
+    }
+
+    public String getEndOfQuizInput() {
+        return null;
     }
 }

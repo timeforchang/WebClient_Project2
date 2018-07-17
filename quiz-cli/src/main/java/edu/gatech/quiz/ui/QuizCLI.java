@@ -36,13 +36,50 @@ public class QuizCLI {
     public void run() {
         String userReply;
 
-
         printWelcome();
         printCategoryMenu();
         userReply = getCategoryInput();
         System.out.println("Selected category: " + userReply + "\n");
         QuizSession quizSession = QuizSession.createShortSession(userReply, db);
         printQuestion(quizSession, 1); // Test output
+        boolean stillPlaying = true;
+        while (stillPlaying) {
+
+            printWelcome();
+            printCategoryMenu();
+            userReply = getCategoryInput();
+            System.out.println("Selected category: " + userReply);
+            QuizSession quizSession = QuizSession.createShortSession(userReply, db);
+            List<Question> questions = quizSession.getQuestions();
+            int qNum = 1;
+            for (Question q : questions) {
+                printQuestion(q, qNum);
+                int answer = getQuestionInput();
+                quizSession.setUserAnswer(q, q.getOptions().get(answer - 1));
+                qNum++;
+            }
+            printEndOfQuiz(quizSession);
+            boolean onEndOfQuiz = true;
+            while (onEndOfQuiz) {
+                int decision = getEndOfQuizInput();
+                switch (decision) {
+                    case 1:
+                        printQuizExplanation(quizSession);
+                        break;
+                    case 2:
+                        onEndOfQuiz = false;
+                        break;
+                    case 3:
+                        printUserScoreList();
+                        System.out.println("\nPress enter when you are done and you will be brought to category menu.");
+                        input.nextLine();
+                    case 4:
+                        stillPlaying = false;
+                    default:
+                        System.out.print("Invalid input. Try again:");
+                }
+            }
+        }
     }
 
     public void printWelcome() {
@@ -61,18 +98,16 @@ public class QuizCLI {
         System.out.println(output.toString());
     }
 
-    public void printQuestion(QuizSession session, int questionNumber){
+    public void printQuestion(Question question, int qNum){
         StringBuilder output = new StringBuilder();
-        Question question = session.getQuestions().get(questionNumber);
-        output.append("Q").append(questionNumber).append(":\n");
+
+        output.append("Q").append(qNum).append(":\n");
         output.append(question.getBodyText()).append("\n");
         List<Option> options = question.getOptions();
         for(int i = 1; i <= options.size(); i++) {
             output.append(i).append(") ").append(options.get(i - 1).getOptionText()).append("\n");
         }
         output.append("\nPlease choose an answer: ");
-
-
         System.out.print(output.toString());
     }
 
@@ -149,11 +184,19 @@ public class QuizCLI {
             return db.getQuestionCategories().get(chosen - 1);
     }
 
-    public String getQuestionInput() {
-        return null;
+    public int getQuestionInput() {
+        int chosen = 1;
+        if(input.hasNextInt()) {
+            chosen = input.nextInt();
+        }
+        return chosen;
     }
 
-    public String getEndOfQuizInput() {
-        return null;
+    public int getEndOfQuizInput() {
+        int chosen = 1;
+        if(input.hasNextInt()) {
+            chosen = input.nextInt();
+        }
+        return chosen;
     }
 }

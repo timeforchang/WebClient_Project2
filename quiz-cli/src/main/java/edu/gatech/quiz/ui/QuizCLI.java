@@ -42,7 +42,14 @@ public class QuizCLI {
         userReply = getCategoryInput();
         System.out.println("Selected category: " + userReply);
         QuizSession quizSession = QuizSession.createShortSession(userReply, db);
-        printQuestion(quizSession, 1); // Test output
+        List<Question> questions = quizSession.getQuestions();
+        int qNum = 1;
+        for (Question q: questions) {
+            printQuestion(quizSession, q, qNum);
+            int answer = getQuestionInput(quizSession);
+            quizSession.setUserAnswer(q, q.getOptions().get(answer - 1));
+            qNum++;
+        }
     }
 
     public void printWelcome() {
@@ -61,10 +68,10 @@ public class QuizCLI {
         System.out.println(output.toString());
     }
 
-    public void printQuestion(QuizSession session, int questionNumber){
+    public void printQuestion(QuizSession session, Question question, int qNum){
         StringBuilder output = new StringBuilder();
-        Question question = session.getQuestions().get(questionNumber);
-        output.append("Q").append(questionNumber).append(":\n");
+
+        output.append("Q").append(qNum).append(":\n");
         output.append(question.getBodyText()).append("\n");
         List<Option> options = question.getOptions();
         for(int i = 1; i <= options.size(); i++) {
@@ -149,8 +156,12 @@ public class QuizCLI {
             return db.getQuestionCategories().get(chosen - 1);
     }
 
-    public String getQuestionInput() {
-        return null;
+    public int getQuestionInput(QuizSession quizSession) {
+        int chosen = 1;
+        if(input.hasNextInt()) {
+            chosen = input.nextInt();
+        }
+        return chosen;
     }
 
     public String getEndOfQuizInput() {

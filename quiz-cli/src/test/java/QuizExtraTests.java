@@ -3,22 +3,13 @@ import edu.gatech.quiz.helpers.Option;
 import edu.gatech.quiz.helpers.Question;
 import edu.gatech.quiz.helpers.QuizSession;
 import edu.gatech.quiz.ui.QuizCLI;
-import static org.junit.Assert.*;
-
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
 import java.util.*;
-import java.io.*;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.SystemOutRule;
 import org.junit.contrib.java.lang.system.TextFromStandardInputStream;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.contrib.java.lang.system.TextFromStandardInputStream.emptyStandardInputStream;
@@ -103,20 +94,18 @@ public class QuizExtraTests {
     public void testEndOfQuizScore() {
         QuizSession qs = QuizSession.createShortSession(
                 "Theory of Computation Mock Tests", db);
-        assertEquals("Your score in this session: " +
-                ""
-
-
-
-
-
-                "Your score in this session: 0/10\n\n" +
+        List<Question> questions = qs.getQuestions();
+        for (Question q : questions) {
+            qs.setUserAnswer(q, q.getOptions().get(1));
+        }
+        cli.printEndOfQuiz(qs);
+        assertEquals("Your score in this session: 0/4\n\n" +
                 "Please choose any of the following options:\n" +
-                "1) See explanation\n\t" +
-                "2) Take a new quiz\n\t" +
-                "3) Quiz\n\n" +
-                "Please choose your option:",
-                outContent.toString());
+                "\t 1) See explanation\n" +
+                "\t 2) Take a new quiz\n" +
+                "\t 3) See dashboard\n" +
+                "\t 4) Quit\n\nPlease choose your option: ",
+                systemOutRule.getLog());
     }
 //
 //    @Test

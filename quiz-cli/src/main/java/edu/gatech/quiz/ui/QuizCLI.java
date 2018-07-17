@@ -35,8 +35,9 @@ public class QuizCLI {
 
     public void run() {
         String userReply;
-
+        QuizSession quizSession;
         boolean stillPlaying = true;
+
         while (stillPlaying) {
             printWelcome();
             printCategoryMenu();
@@ -44,13 +45,11 @@ public class QuizCLI {
             System.out.println("\n\nSelected category: " + userReply);
             printChooseSession();
             int sessionChoice = getSessionInput();
-            QuizSession quizSession;
             if (sessionChoice == 1) {
                 quizSession = QuizSession.createLongSession(userReply, db);
             } else {
                 quizSession = QuizSession.createShortSession(userReply, db);
             }
-
             List<Question> questions = quizSession.getQuestions();
             int qNum = 1;
             for (Question q : questions) {

@@ -2,31 +2,772 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de8b0c9a-dacc-4e6c-9680-59e79ad9bd71" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/cache.properties.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileSnapshots.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/outputFileStates.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/outputFileStates.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/taskArtifacts.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.1.201405082137.jar_b7d3vtnu5o4rqdmunmf1xkvbh/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.1.201405082137.jar_b7d3vtnu5o4rqdmunmf1xkvbh/META-INF/MTNMINDS.RSA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.1.201405082137.jar_b7d3vtnu5o4rqdmunmf1xkvbh/META-INF/MTNMINDS.SF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.1.201405082137.jar_b7d3vtnu5o4rqdmunmf1xkvbh/META-INF/maven/org.jacoco/org.jacoco.agent/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.1.201405082137.jar_b7d3vtnu5o4rqdmunmf1xkvbh/META-INF/maven/org.jacoco/org.jacoco.agent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.1.201405082137.jar_b7d3vtnu5o4rqdmunmf1xkvbh/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/test/jar_extract_6529281575700921853_tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_stefanbirkner_system_rules_1_18_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_1_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_xerial_sqlite_jdbc_3_8_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mockito_core_1_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/objenesis_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_8_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/QuizApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/edu/gatech/quiz/data/QuizDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/edu/gatech/quiz/helpers/Option.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/edu/gatech/quiz/helpers/Question.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/main/edu/gatech/quiz/helpers/QuizSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/edu/gatech/quiz/helpers/QuizSession.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/main/edu/gatech/quiz/ui/QuizCLI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/edu/gatech/quiz/ui/QuizCLI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/QuizDBTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/QuizSessionTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/QuizTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/classpathdumps/QuizTestSuite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/BasicConfigurator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/Level.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/Logger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/LoggerContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/PatternLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/encoder/PatternLayoutEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/Abbreviator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/CallerDataConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/ClassOfCallerConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/ClassicConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/ContextNameConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/DateConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/EnsureExceptionHandling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/ExtendedThrowableProxyConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/FileOfCallerConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/LevelConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/LineOfCallerConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/LineSeparatorConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/LoggerConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/MDCConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/MarkerConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/MessageConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/MethodOfCallerConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/NamedConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/NopThrowableInformationConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/PropertyConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/RelativeTimeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/RootCauseFirstThrowableProxyConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/TargetLengthBasedClassNameAbbreviator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/ThreadConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/ThrowableHandlingConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/ThrowableProxyConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/pattern/color/HighlightingCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/selector/ContextSelector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/selector/DefaultContextSelector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/spi/ILoggingEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/spi/IThrowableProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/spi/LoggerContextVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/spi/ThrowableProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/spi/TurboFilterList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/turbo/TurboFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/util/ContextInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/util/ContextSelectorStaticBinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/util/LoggerNameUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/classic/util/StatusListenerConfigHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/Appender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/AppenderBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/BasicStatusManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/ConsoleAppender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/Context.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/ContextBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/Layout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/LayoutBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/LifeCycleManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/OutputStreamAppender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/UnsynchronizedAppenderBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/boolex/EvaluationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/encoder/Encoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/encoder/EncoderBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/encoder/LayoutWrappingEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/helpers/CyclicBuffer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/joran/spi/ConsoleTarget$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/joran/spi/ConsoleTarget$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/joran/spi/ConsoleTarget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/joran/spi/JoranException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/CompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/Converter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/ConverterUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/DynamicConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/FormatInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/FormattingConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/IdentityCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/LiteralConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/PatternLayoutBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/PatternLayoutEncoderBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/PostCompileProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/ReplacingCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/BlackCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/BlueCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/BoldBlueCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/BoldCyanCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/BoldGreenCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/BoldMagentaCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/BoldRedCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/BoldWhiteCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/BoldYellowCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/CyanCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/ForegroundCompositeConverterBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/GrayCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/GreenCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/MagentaCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/RedCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/WhiteCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/color/YellowCompositeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/parser/Compiler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/parser/CompositeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/parser/FormattingNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/parser/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/parser/OptionTokenizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/parser/Parser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/parser/SimpleKeywordNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/parser/Token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/parser/TokenStream$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/parser/TokenStream$TokenizerState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/parser/TokenStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/util/AsIsEscapeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/util/IEscapeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/util/RegularEscapeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/pattern/util/RestrictedEscapeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/spi/AppenderAttachable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/spi/AppenderAttachableImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/spi/ContextAware.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/spi/ContextAwareBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/spi/DeferredProcessingAware.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/spi/FilterAttachable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/spi/FilterAttachableImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/spi/FilterReply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/spi/LifeCycle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/spi/LogbackLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/spi/PropertyContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/spi/ScanException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/status/InfoStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/status/OnConsoleStatusListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/status/OnPrintStreamStatusListenerBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/status/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/status/StatusBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/status/StatusListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/status/StatusManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/status/StatusUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/util/CachingDateFormatter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/util/DynamicClassLoadingException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/util/EnvUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/util/IncompatibleClassException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/util/Loader$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/util/Loader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/util/OptionHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/ch/qos/logback/core/util/StatusPrinter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/esotericsoftware/kryo/KryoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/esotericsoftware/kryo/io/Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/esotericsoftware/kryo/io/Output.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/base/Equivalence$Equals.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/base/Equivalence$Identity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/base/Equivalence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/base/FunctionalEquivalence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/base/Objects.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/base/PairwiseEquivalence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/base/Preconditions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/base/Predicate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/base/Ticker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/base/Ticker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/ComputingConcurrentHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/EmptyImmutableSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/GenericMapMaker$NullListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/GenericMapMaker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/Hashing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/ImmutableAsList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/ImmutableCollection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/ImmutableList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/ImmutableSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMaker$ComputingMapAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMaker$NullComputingConcurrentMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMaker$NullConcurrentMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMaker$RemovalListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMaker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$EntryFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$EntryFactory$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$EntryFactory$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$EntryFactory$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$EntryFactory$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$EntryFactory$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$EntryFactory$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$EntryFactory$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$EntryFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$EvictionQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$ExpirationQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$ReferenceEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$Segment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$Strength$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$Strength$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$Strength$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$Strength.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$StrongEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$ValueReference.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap$WeakValueReference.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/MapMakerInternalMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/ObjectArrays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/RegularImmutableAsList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/RegularImmutableSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/google/common/collect/SingletonImmutableSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/sun/proxy/$Proxy0.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/sun/proxy/$Proxy1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/sun/proxy/$Proxy10.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/sun/proxy/$Proxy10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/sun/proxy/$Proxy11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/sun/proxy/$Proxy2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/sun/proxy/$Proxy3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/sun/proxy/$Proxy3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/sun/proxy/$Proxy4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/sun/proxy/$Proxy6.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/sun/proxy/$Proxy7.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/classpathdumps/com/sun/proxy/$Proxy7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/edu/gatech/quiz/data/QuizDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/classpathdumps/edu/gatech/quiz/data/QuizDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/edu/gatech/quiz/helpers/Option.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/edu/gatech/quiz/helpers/Question.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/edu/gatech/quiz/helpers/QuizSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/classpathdumps/edu/gatech/quiz/helpers/QuizSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jacoco/jacocoTest.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/jacocoTest.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/classes/QuizDBTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/classes/QuizDBTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/classes/QuizSessionTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/classes/QuizSessionTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/binary/test/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/binary/test/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/binary/test/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/binary/test/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/binary/test/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/binary/test/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/jarjar/org/gradle/process/internal/launcher/GradleWorkerMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/junit/framework/Assert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/junit/framework/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/junit/framework/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/apache/commons/lang/StringUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/GradleException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/Transformer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/UncheckedIOException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/AbstractTestDescriptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/DefaultTestClassDescriptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/DefaultTestClassRunInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/DefaultTestDescriptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/DefaultTestMethodDescriptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/DefaultTestOutputEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/DefaultTestSuiteDescriptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/SuiteTestClassProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/TestClassProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/TestClassRunInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/TestCompleteEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/TestDescriptorInternal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/TestResultProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/TestStartEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/TestSuiteExecutionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/WorkerTestClassProcessorFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/junit/CategoryFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/junit/JULRedirector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/junit/JUnitSpec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/junit/JUnitTestClassExecuter$MethodNameFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/junit/JUnitTestClassExecuter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/junit/JUnitTestClassProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/junit/JUnitTestEventAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/junit/JUnitTestFramework$TestClassProcessorFactoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/junit/TestClassExecutionEventGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/junit/TestClassExecutionListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/processors/CaptureTestOutputTestResultProcessor$StdErrForwarder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/processors/CaptureTestOutputTestResultProcessor$StdOutForwarder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/processors/CaptureTestOutputTestResultProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/results/AttachParentTestResultProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/RemoteTestClassProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$DefaultTestClassDescriptorSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$DefaultTestClassRunInfoSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$DefaultTestDescriptorSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$DefaultTestMethodDescriptorSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$DefaultTestOutputEventSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$DefaultTestSuiteDescriptorSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$IdSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$NullableSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$TestCompleteEventSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$TestStartEventSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$ThrowableSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$WorkerTestSuiteDescriptorSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestEventSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestWorker$TestFrameworkServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/TestWorker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/WorkerTestClassProcessor$WorkerTestSuiteDescriptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/internal/tasks/testing/worker/WorkerTestClassProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/logging/LogLevel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/logging/LogLevel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/logging/LogLevel$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/logging/LogLevel$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/logging/LogLevel$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/logging/LogLevel$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/logging/LogLevel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/logging/Logger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/logging/Logging$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/logging/Logging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/logging/LoggingManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/logging/LoggingOutput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/logging/StandardOutputListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/specs/Spec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/tasks/testing/TestDescriptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/tasks/testing/TestOutputEvent$Destination.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/tasks/testing/TestOutputEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/api/tasks/testing/TestResult$ResultType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/cli/CommandLineConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/Actions$NullAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/Actions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/Factory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/SystemProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/TimeProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/TrueTimeProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/UncheckedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/classloader/CachingClassLoader$Spec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/classloader/CachingClassLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/classloader/ClassLoaderHierarchy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/classloader/ClassLoaderSpec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/classloader/FilteringClassLoader$Spec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/classloader/FilteringClassLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/classloader/MultiParentClassLoader$Spec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/classloader/MultiParentClassLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/classloader/MutableURLClassLoader$Spec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/classloader/MutableURLClassLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/concurrent/AsyncStoppable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/concurrent/CompositeStoppable$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/concurrent/CompositeStoppable$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/concurrent/CompositeStoppable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/concurrent/DefaultExecutorFactory$StoppableExecutorImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/concurrent/DefaultExecutorFactory$StoppableExecutorImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/concurrent/DefaultExecutorFactory$ThreadFactoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/concurrent/DefaultExecutorFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/concurrent/ExecutorFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/concurrent/Stoppable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/concurrent/StoppableExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/concurrent/ThreadSafe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/exceptions/DefaultMultiCauseException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/exceptions/MultiCauseException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/id/CompositeIdGenerator$CompositeId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/id/CompositeIdGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/id/IdGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/id/LongIdGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/id/UUIDGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/io/ClassLoaderObjectInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/io/TextStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/reflect/JavaMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/reflect/JavaReflectionUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/reflect/NoSuchMethodException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/reflect/NoSuchPropertyException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/reflect/PropertyAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/reflect/PropertyMutator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/DefaultServiceRegistry$ClassSpec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/DefaultServiceRegistry$CompositeProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/DefaultServiceRegistry$DefaultLookupContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/DefaultServiceRegistry$FactoryMethodService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/DefaultServiceRegistry$FactoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/DefaultServiceRegistry$LookupContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/DefaultServiceRegistry$ManagedObjectProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/DefaultServiceRegistry$OwnServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/DefaultServiceRegistry$Provider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/DefaultServiceRegistry$ServiceProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/DefaultServiceRegistry$SingletonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/DefaultServiceRegistry$TypeSpec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/DefaultServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/ServiceCreationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/ServiceLookupException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/ServiceRegistration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/ServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/ServiceValidationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/internal/service/UnknownServiceException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/listener/BroadcastDispatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/listener/ContextClassLoaderProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/listener/ListenerBroadcast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/listener/ListenerNotificationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/LoggingConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/LoggingManagerInternal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/LoggingServiceRegistry$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/LoggingServiceRegistry$ChildProcessLogging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/LoggingServiceRegistry$CommandLineLogging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/LoggingServiceRegistry$EmbeddedLogging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/LoggingServiceRegistry$NestedLogging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/LoggingServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/ProgressLoggerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/StandardOutputCapture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/StandardOutputRedirector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/StyledTextOutput$Style.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/StyledTextOutput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/StyledTextOutputFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/AbstractLineChoppingStyledTextOutput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/AbstractStyledTextOutput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/CategorisedOutputEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/ColorMap$Color.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/ColorMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/DefaultColorMap$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/DefaultColorMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/DefaultLoggingConfigurer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/DefaultLoggingManager$StartableLoggingSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/DefaultLoggingManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/DefaultLoggingManagerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/DefaultStandardOutputRedirector$DiscardAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/DefaultStandardOutputRedirector$WriteAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/DefaultStandardOutputRedirector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/DefaultStdErrLoggingSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/DefaultStdOutLoggingSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/JavaUtilLoggingConfigurer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/LogEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/LogLevelChangeEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/LoggingConfigurer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/LoggingOutputInternal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/LoggingSystem$Snapshot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/LoggingSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/LoggingSystemAdapter$SnapshotImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/LoggingSystemAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/OutputEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/OutputEventListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/OutputEventRenderer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/OutputEventRenderer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/OutputEventRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/PrintStreamLoggingSystem$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/PrintStreamLoggingSystem$OutputEventDestination.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/PrintStreamLoggingSystem$PrintStreamDestination.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/PrintStreamLoggingSystem$SnapshotImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/PrintStreamLoggingSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/ProgressListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/ProgressLogEventGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/RenderableOutputEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/StdErrLoggingSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/StdOutLoggingSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/StreamBackedStandardOutputListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/StreamingStyledTextOutput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/StyledTextOutputBackedRenderer$OutputEventTextOutputImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/StyledTextOutputBackedRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/StyledTextOutputEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/TextStreamOutputEventListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/logback/LogLevelConverter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/logback/LogLevelConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/logback/LogbackLoggingConfigurer$GradleAppender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/logback/LogbackLoggingConfigurer$GradleFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/logging/internal/logback/LogbackLoggingConfigurer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/actor/Actor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/actor/ActorFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/actor/internal/DefaultActorFactory$BlockingActor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/actor/internal/DefaultActorFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/dispatch/ContextClassLoaderDispatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/dispatch/Dispatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/dispatch/DispatchFailureHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/dispatch/MethodInvocation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/dispatch/ProxyDispatchAdapter$DispatchingInvocationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/dispatch/ProxyDispatchAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/dispatch/Receive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/dispatch/ReflectionDispatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/MessagingClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/MessagingServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/ObjectConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/ObjectConnectionBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/AsyncConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/ConnectCompletion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/ConnectException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/IncomingBroadcast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/IncomingConnector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/Message$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/Message$ExceptionPlaceholder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/Message$ExceptionPlaceholder$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/Message$ExceptionPlaceholder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/Message$ExceptionReplacingObjectInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/Message$ExceptionReplacingObjectOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/Message$TopLevelExceptionPlaceholder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/MessageIOException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/MessageOriginator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/MessageSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/MessagingServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/OutgoingBroadcast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/OutgoingConnector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/PlaceholderException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/RemoteConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/ConnectionSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/ConnectionState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/HubStateListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/IncomingQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/InterHubMessageSerializer$MessageReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/InterHubMessageSerializer$MessageWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/InterHubMessageSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/MessageHub$ChannelDispatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/MessageHub$ConnectionDispatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/MessageHub$ConnectionReceive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/MessageHub$Discard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/MessageHub$Handler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/MessageHub$State.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/MessageHub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/MessageHubBackedClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/MessageHubBackedObjectConnection$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/MessageHubBackedObjectConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/MethodInvocationSerializer$MethodInvocationReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/MethodInvocationSerializer$MethodInvocationWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/MethodInvocationSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/OutgoingQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/RejectedMessageListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/protocol/ChannelIdentifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/protocol/ChannelMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/protocol/ConnectionClosed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/protocol/ConnectionEstablished.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/protocol/EndOfStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/protocol/InterHubMessage$Delivery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/protocol/InterHubMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/protocol/RejectedMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/protocol/Routable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/queue/EndPointQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/queue/MultiChannelQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/queue/MultiEndPointQueue$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/queue/MultiEndPointQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/hub/queue/QueueInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/inet/InetAddressFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/inet/InetEndpoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/inet/MultiChoiceAddress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/inet/SocketConnectCompletion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/inet/SocketConnection$SocketInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/inet/SocketConnection$SocketOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/inet/SocketConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/inet/SocketInetAddress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/inet/TcpOutgoingConnector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/remote/internal/protocol/DiscoveryMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/AbstractDecoder$DecoderStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/AbstractDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/AbstractEncoder$EncoderStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/AbstractEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/BaseSerializerFactory$ByteArraySerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/BaseSerializerFactory$EnumSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/BaseSerializerFactory$FileSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/BaseSerializerFactory$LongSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/BaseSerializerFactory$StringMapSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/BaseSerializerFactory$StringSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/BaseSerializerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/Decoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/DefaultSerializerRegistry$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/DefaultSerializerRegistry$TaggedTypeSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/DefaultSerializerRegistry$TypeInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/DefaultSerializerRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/Encoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/FlushableEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/ObjectReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/ObjectWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/Serializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/SerializerRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/kryo/KryoBackedDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/kryo/KryoBackedEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/kryo/StatefulSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/kryo/TypeSafeSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/kryo/TypeSafeSerializer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/messaging/serialize/kryo/TypeSafeSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/process/internal/WorkerProcessContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/process/internal/child/ActionExecutionWorker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/process/internal/child/ActionExecutionWorker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/process/internal/child/ImplementationClassLoaderWorker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/process/internal/child/SystemApplicationClassLoaderWorker$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/process/internal/child/SystemApplicationClassLoaderWorker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/process/internal/child/WorkerContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/process/internal/launcher/BootstrapClassLoaderWorker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/util/LineBufferingOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/util/LinePerThreadBufferingOutputStream$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/util/LinePerThreadBufferingOutputStream$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/gradle/util/LinePerThreadBufferingOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/hamcrest/SelfDescribing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/After.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/AfterClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/Assert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/Before.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/BeforeClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/ClassRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/ComparisonFailure.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/FixMethodOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/Ignore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/Rule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/Test$None.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/AssumptionViolatedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/MethodSorter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/MethodSorter$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/MethodSorter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/builders/AllDefaultPossibilitiesBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/builders/AnnotatedBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/builders/IgnoredBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/builders/IgnoredClassRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/builders/JUnit3Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/builders/JUnit4Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/builders/NullBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/builders/SuiteMethodBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/requests/ClassRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/requests/FilterRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/requests/SortingRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/ErrorReportingRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/JUnit38ClassRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/SuiteMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/model/EachTestNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/model/ReflectiveCallable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/rules/RuleMemberValidator$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/rules/RuleMemberValidator$DeclaringClassMustBePublic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/rules/RuleMemberValidator$FieldMustBeARule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/rules/RuleMemberValidator$FieldMustBeATestRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/rules/RuleMemberValidator$MemberMustBeNonStaticOrAlsoClassRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/rules/RuleMemberValidator$MemberMustBePublic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/rules/RuleMemberValidator$MemberMustBeStatic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/rules/RuleMemberValidator$MethodMustBeARule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/rules/RuleMemberValidator$MethodMustBeATestRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/rules/RuleMemberValidator$RuleValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/rules/RuleMemberValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/statements/ExpectException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/statements/Fail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/statements/FailOnTimeout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/statements/InvokeMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/statements/RunAfters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/internal/runners/statements/RunBefores.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/rules/MethodRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/rules/RunRules.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/rules/TestRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/Describable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/Description.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/Request$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/Request.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/RunWith.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/manipulation/Filter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/manipulation/Filterable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/manipulation/NoTestsRemainException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/manipulation/Sortable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/notification/Failure.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/notification/RunListener$ThreadSafe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/notification/RunListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/notification/RunNotifier$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/notification/RunNotifier$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/notification/RunNotifier$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/notification/RunNotifier$SafeNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/notification/RunNotifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/notification/StoppedByUserException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runner/notification/SynchronizedRunListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/BlockJUnit4ClassRunner$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/BlockJUnit4ClassRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/ParentRunner$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/ParentRunner$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/ParentRunner$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/ParentRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/Suite$SuiteClasses.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/Suite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/model/Annotatable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/model/FrameworkField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/model/FrameworkMember.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/model/FrameworkMethod$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/model/FrameworkMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/model/InitializationError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/model/MultipleFailureException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/model/RunnerBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/model/RunnerScheduler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/model/Statement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/model/TestClass$FieldComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/model/TestClass$MethodComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/runners/model/TestClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/validator/AnnotationValidatorFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/validator/AnnotationsValidator$AnnotatableValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/validator/AnnotationsValidator$ClassValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/validator/AnnotationsValidator$FieldValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/validator/AnnotationsValidator$MethodValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/validator/AnnotationsValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/validator/PublicClassValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/validator/TestClassValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/junit/validator/ValidateWith.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/ILoggerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/IMarkerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/Logger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/LoggerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/Marker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/MarkerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/bridge/SLF4JBridgeHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/helpers/BasicMarker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/helpers/BasicMarkerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/helpers/NOPLoggerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/helpers/SubstituteLoggerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/impl/StaticLoggerBinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/impl/StaticMarkerBinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/spi/LocationAwareLogger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/spi/LoggerFactoryBinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/slf4j/spi/MarkerFactoryBinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/Function$Aggregate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/Function.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/JDBC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteConfig$DateClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteConfig$DatePrecision.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteConfig$Encoding.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteConfig$JournalMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteConfig$LockingMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteConfig$Pragma.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteConfig$PragmaValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteConfig$SynchronousMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteConfig$TempStore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteConfig$TransactionMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteJDBCLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/SQLiteOpenMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/core/Codes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/core/CoreConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/core/CoreDatabaseMetaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/core/CoreResultSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/core/CoreStatement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/core/DB$ProgressObserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/core/DB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/core/NativeDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/jdbc3/JDBC3Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/jdbc3/JDBC3DatabaseMetaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/jdbc3/JDBC3ResultSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/jdbc3/JDBC3Statement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/jdbc4/JDBC4Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/jdbc4/JDBC4DatabaseMetaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/jdbc4/JDBC4ResultSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/jdbc4/JDBC4Statement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/classpathdumps/org/sqlite/util/OSInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.1.201405082137.jar_3dkze7vlofjxasdj61nevlrpj/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.1.201405082137.jar_3dkze7vlofjxasdj61nevlrpj/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.1.201405082137.jar_3dkze7vlofjxasdj61nevlrpj/META-INF/MTNMINDS.SF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.1.201405082137.jar_3dkze7vlofjxasdj61nevlrpj/META-INF/MTNMINDS.SF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.1.201405082137.jar_3dkze7vlofjxasdj61nevlrpj/jacocoagent.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.7.1.201405082137.jar_3dkze7vlofjxasdj61nevlrpj/org/jacoco/agent/AgentJar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/QuizApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/gatech/quiz/data/QuizDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/gatech/quiz/helpers/Option.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/gatech/quiz/helpers/Question.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/edu/gatech/quiz/helpers/QuizSession.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/edu/gatech/quiz/ui/QuizCLI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/edu/gatech/quiz/ui/QuizCLI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/QuizDBTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/QuizExtraTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/QuizSessionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/QuizTestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/QuizTestSuite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-cli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-cli.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz.db" beforeDir="false" afterPath="$PROJECT_DIR$/quiz.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QuizApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuizApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/data/QuizDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/data/QuizDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/Option.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/helpers/QuizSession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/QuizDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuizDBTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/QuizSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuizSessionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/QuizTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuizTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/QuizTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuizTestSuite.java" afterDir="false" />
     </list>
     <ignored path="clean_version.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,11 +865,8 @@
       <file leaf-file-name="QuizCLI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
-              <folding>
-                <element signature="e#819#828#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="238" column="13" selection-start-line="238" selection-start-column="13" selection-end-line="238" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -284,7 +1022,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5934568465000" />
+        <entry key="$PROJECT_DIR$" value="6127526592000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="2122897308" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="3883967377" />
@@ -490,7 +1228,58 @@
             <path>
               <item name="quiz-cli" type="b2602c69:ProjectViewProjectNode" />
               <item name="quiz-cli" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quiz-cli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quiz-cli" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quiz-cli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quiz-cli" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quiz-cli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quiz-cli" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quiz-cli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quiz-cli" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="gatech" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quiz-cli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quiz-cli" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="gatech" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quiz-cli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quiz-cli" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quiz-cli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quiz-cli" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="quiz-cli" type="b2602c69:ProjectViewProjectNode" />
@@ -840,11 +1629,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18143000" />
+    <option name="totallyTimeSpent" value="18338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="10" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
@@ -864,24 +1652,50 @@
       <window_info id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.28163266" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.28163266" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32789117" />
       <window_info anchor="bottom" id="CheckStyle" order="13" weight="0.32897604" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32517007" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21959943" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21959943" />
       <window_info anchor="right" id="Gradle" order="7" weight="0.3297568" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="SQLite Explorer" order="5" />
-      <window_info id="Build Variants" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Analysis" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="SQLite Explorer" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.32570806" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21959943" />
+      <window_info anchor="bottom" id="CheckStyle" order="13" weight="0.32897604" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.32962668" />
+      <window_info anchor="bottom" id="Analysis" order="10" />
+      <window_info id="Build Variants" order="5" side_tool="true" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="10" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32995737" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Database" order="11" weight="0.3297568" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32789117" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32772493" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.28163266" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32517007" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Build" order="12" weight="0.32517007" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.3265306" />
+      <window_info anchor="right" id="Gradle" order="7" weight="0.3297568" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Designer" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1128,11 +1942,6 @@
     <entry file="file://$PROJECT_DIR$/../README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/classes/edu/gatech/quiz/data/QuizDB.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/QuizTestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1237,13 +2046,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/classes/edu/gatech/quiz/data/QuizDB.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/gatech/quiz/ui/QuizCLI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
-          <folding>
-            <element signature="e#819#828#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="152">
+          <caret line="238" column="13" selection-start-line="238" selection-start-column="13" selection-end-line="238" selection-end-column="13" />
         </state>
       </provider>
     </entry>

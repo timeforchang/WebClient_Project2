@@ -1,10 +1,7 @@
 package edu.gatech.quiz.ui;
-
 import edu.gatech.quiz.data.QuizDB;
 import edu.gatech.quiz.helpers.*;
-
 import java.util.*;
-
 /**
  * CS3300 Project 2
  * This class can be left AS IS. No implementation needed.
@@ -15,13 +12,11 @@ public class QuizCLI {
     final private QuizDB db;
     Scanner input = new Scanner(System.in);
     Map<String, List<Integer>> userAnswers;
-
     public static void main(String[] args) {
         QuizDB database = new QuizDB();
         QuizCLI cli = new QuizCLI(database);
         cli.run();
     }
-
     public QuizCLI(QuizDB db) {
         this.db = db;
         userAnswers = new HashMap<String, List<Integer>>();
@@ -32,12 +27,10 @@ public class QuizCLI {
             userAnswers.put(category, toPut);
         }
     }
-
     public void run() {
         String userReply;
         QuizSession quizSession;
         boolean stillPlaying = true;
-
         while (stillPlaying) {
             printWelcome();
             printCategoryMenu();
@@ -93,13 +86,11 @@ public class QuizCLI {
             } while (onEndOfQuiz);
         }
     }
-
     public void printWelcome() {
         System.out.print("Welcome to GeeQuiz, a Computer Science quiz app!\n\n" +
                 "Please choose a question category from the list " +
                 "below:\n");
     }
-
     public void printCategoryMenu() {
         StringBuilder output = new StringBuilder();
         List<String> categories = db.getQuestionCategories();
@@ -109,7 +100,6 @@ public class QuizCLI {
         output.append("\nPlease choose a category: ");
         System.out.print(output.toString());
     }
-
     public void printChooseSession() {
         StringBuilder output = new StringBuilder();
         output.append("\n\nPlease choose a session: \n");
@@ -118,10 +108,8 @@ public class QuizCLI {
         output.append("\nPlease choose a category: ");
         System.out.print(output.toString());
     }
-
     public void printQuestion(Question question, int qNum){
         StringBuilder output = new StringBuilder();
-
         output.append("Q").append(qNum).append(":\n");
         output.append(question.getBodyText()).append("\n\n");
         List<Option> options = question.getOptions();
@@ -131,7 +119,6 @@ public class QuizCLI {
         output.append("\nPlease choose an answer: ");
         System.out.print(output.toString());
     }
-
     public void printEndOfQuiz(QuizSession session) {
         String output = "Your score in this session: " +
                 session.getScore() + "/" +
@@ -143,7 +130,6 @@ public class QuizCLI {
                 "\t 4) Quit\n\nPlease choose your option: ";
         System.out.print(output);
     }
-
     public void printQuizExplanation(QuizSession session){
         StringBuilder output = new StringBuilder("\nGeeQuiz Answer Explanations: \n");
         List <Question> questions = session.getQuestions();
@@ -153,9 +139,7 @@ public class QuizCLI {
             output.append(q.getBodyText()).append("\n\n");
             output.append(q.getExplanation()).append("\n\n");
             List<Option> options = q.getOptions();
-
             Option userOption = session.getUserAnswer(q);
-
             int optionNumber = 1;
             for (Option o : options) {
                 output.append(optionNumber).append(") ").append(o.getOptionText());
@@ -172,17 +156,14 @@ public class QuizCLI {
         }
         System.out.println(output.toString());
     }
-
     public Map<String, List<Integer>> getUserSessionScore() {
         return userAnswers;
     }
-
     public void setUserSessionScore(String category, int score, int answered) {
         if (!userAnswers.containsKey(category)) {
             List<Integer> toPut = new ArrayList<Integer>();
             toPut.add(score);
             toPut.add(answered);
-
             userAnswers.put(category, toPut);
         } else {
             List<Integer> toPut = new ArrayList<Integer>();
@@ -193,23 +174,20 @@ public class QuizCLI {
             userAnswers.put(category, toPut);
         }
     }
-
     public void printUserScoreList() {
         System.out.print("\nGeeQuiz: Dashboard\t\n");
         int i = 1;
         for (String category : db.getQuestionCategories()) {
             System.out.print("\n\t" + Integer.toString(i++) + ") " + category + "\t\t"
-                + userAnswers.get(category).get(0) + "/" + userAnswers.get(category).get(1));
+                    + userAnswers.get(category).get(0) + "/" + userAnswers.get(category).get(1));
         }
     }
-
     public String getCategoryInput() {
         int chosen = 0;
         while (!input.hasNextInt()) {
             System.out.print("Invalid input, please choose again: ");
             input.next();
         }
-
         chosen = input.nextInt();
         while (chosen > db.getQuestionCategories().size() || chosen < 1) {
             System.out.print("Invalid category, please choose again: ");
@@ -221,16 +199,13 @@ public class QuizCLI {
         }
         return db.getQuestionCategories().get(chosen - 1);
     }
-
     public int getSessionInput() {
         int chosen = 0;
         while (!input.hasNextInt()) {
             System.out.print("Invalid input, please choose again: ");
             input.next();
         }
-
         chosen = input.nextInt();
-
         while (chosen > 2 || chosen < 1) {
             System.out.print("Invalid session choice, please choose again: ");
             while (!input.hasNextInt()) {
@@ -241,25 +216,21 @@ public class QuizCLI {
         }
         return chosen;
     }
-
     public int getQuestionInput() {
         int chosen = 0;
         while (!input.hasNextInt()) {
             System.out.print("Invalid input, please choose again: ");
             input.next();
         }
-
         chosen = input.nextInt();
         return chosen;
     }
-
     public int getEndOfQuizInput() {
         int chosen = 0;
         while (!input.hasNextInt()) {
             System.out.print("Invalid input, please choose again: ");
             input.next();
         }
-
         chosen = input.nextInt();
         return chosen;
     }

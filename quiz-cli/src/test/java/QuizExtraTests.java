@@ -133,21 +133,6 @@ public class QuizExtraTests {
         assertEquals(4, cli.getEndOfQuizInput());
     }
 
-//    @Test
-//    public void testExplanationOutput() {
-//        QuizSession quizSession = QuizSession.createShortSession("Computer Organization and Architecture", db);
-//        Question question = quizSession.getQuestions().get(2);
-//        Option userOption = quizSession.getUserAnswer(question);
-//        //cli.printQuizExplanation(quizSession, question, userOption);
-//        assertEquals("GeeQuiz\n" +
-//        "The size of the cache tag directory is\n\n" +
-//        "16 bit address   2 bit valid   1 modified   1 replace  Total bits  = 20 20 × no. of blocks   = 160 K bits.\n\n\t" +
-//        "1) 160 Kbits (Correct)\n\t" +
-//        "2) 136 bits (Wrong)\n\t" +
-//        "3) 40 Kbits\n\t" +
-//        "4) 32 bits\n", outContent.toString());
-//    }
-
     @Test
     public void testUserAnswersCreate() {
         assertNotNull(cli.getUserSessionScore());
@@ -165,39 +150,39 @@ public class QuizExtraTests {
         assertEquals(toCompare, cli.getUserSessionScore());
     }
 
-//    @Test
-//    public void testUserAnswersSetScores() {
-//        String cat = "Theory of Computation Mock Tests";
-//        int score = 1;
-//        int answered = 4;
-//
-//        cli.setUserSessionScore(cat, score, answered);
-//        Map<String, List<Integer>> toCompare = new HashMap<String, List<Integer>>();
-//        for (String category : db.getQuestionCategories()) {
-//            List<Integer> runningScore = new ArrayList<>();
-//            runningScore.add(0);
-//            runningScore.add(0);
-//            toCompare.put(cat, runningScore);
-//        }
-//        List<Integer> runningScore = new ArrayList<>();
-//        runningScore.add(1);
-//        runningScore.add(4);
-//        toCompare.put(cat, runningScore);
-//
-//        assertEquals(toCompare.get(cat), cli.getUserSessionScore());
-//
-//        cat = "Theory of Computation Mock Tests";
-//        score = 2;
-//        answered = 4;
-//
-//        cli.setUserSessionScore(cat, score, answered);
-//
-//        runningScore = new ArrayList<>();
-//        runningScore.add(3);
-//        runningScore.add(8);
-//        toCompare.put(cat, runningScore);
-//        assertEquals(toCompare.get(cat), cli.getUserSessionScore());
-//    }
+    @Test
+    public void testUserAnswersSetScores() {
+        String cat = "Theory of Computation Mock Tests";
+        int score = 1;
+        int answered = 4;
+
+        cli.setUserSessionScore(cat, score, answered);
+        Map<String, List<Integer>> toCompare = new HashMap<String, List<Integer>>();
+        for (String category : db.getQuestionCategories()) {
+            List<Integer> runningScore = new ArrayList<>();
+            runningScore.add(0);
+            runningScore.add(0);
+            toCompare.put(cat, runningScore);
+        }
+        List<Integer> runningScore = new ArrayList<>();
+        runningScore.add(1);
+        runningScore.add(4);
+        toCompare.put(cat, runningScore);
+
+        assertEquals(toCompare.get(cat), cli.getUserSessionScore().get(cat));
+
+        cat = "Theory of Computation Mock Tests";
+        score = 2;
+        answered = 4;
+
+        cli.setUserSessionScore(cat, score, answered);
+
+        runningScore = new ArrayList<>();
+        runningScore.add(3);
+        runningScore.add(8);
+        toCompare.put(cat, runningScore);
+        assertEquals(toCompare.get(cat), cli.getUserSessionScore().get(cat));
+    }
 
     @Test
     public void testPrintUserScoreList() {

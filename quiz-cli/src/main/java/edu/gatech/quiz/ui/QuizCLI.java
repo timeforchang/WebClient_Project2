@@ -56,6 +56,10 @@ public class QuizCLI {
                 System.out.println("\n");
                 printQuestion(q, qNum);
                 int answer = getQuestionInput();
+                while (answer > questions.size() || answer < 1) {
+                    System.out.print("Invalid option choice, please choose again: ");
+                    answer = getQuestionInput();
+                }
                 quizSession.setUserAnswer(q, q.getOptions().get(answer - 1));
                 qNum++;
             }
@@ -83,7 +87,7 @@ public class QuizCLI {
                         System.exit(0);
                         break;
                     default:
-                        System.out.print("Invalid input. Try again: ");
+                        System.out.print("Invalid input. Try again. \n\n");
                         break;
                 }
             } while (onEndOfQuiz);
@@ -201,47 +205,62 @@ public class QuizCLI {
 
     public String getCategoryInput() {
         int chosen = 0;
-        if (input.hasNextInt()) {
-            chosen = input.nextInt();
+        while (!input.hasNextInt()) {
+            System.out.print("Invalid input, please choose again: ");
+            input.next();
         }
 
+        chosen = input.nextInt();
         while (chosen > db.getQuestionCategories().size() || chosen < 1) {
-            System.out.println("Invalid category, please choose again: ");
-            if (input.hasNextInt()) {
-                chosen = input.nextInt();
+            System.out.print("Invalid category, please choose again: ");
+            while (!input.hasNextInt()) {
+                System.out.print("Invalid input, please choose again: ");
+                input.next();
             }
+            chosen = input.nextInt();
         }
         return db.getQuestionCategories().get(chosen - 1);
     }
 
     public int getSessionInput() {
         int chosen = 0;
-        if (input.hasNextInt()) {
-            chosen = input.nextInt();
+        while (!input.hasNextInt()) {
+            System.out.print("Invalid input, please choose again: ");
+            input.next();
         }
 
+        chosen = input.nextInt();
+
         while (chosen > 2 || chosen < 1) {
-            System.out.println("Invalid session choice, please choose again: ");
-            if (input.hasNextInt()) {
-                chosen = input.nextInt();
+            System.out.print("Invalid session choice, please choose again: ");
+            while (!input.hasNextInt()) {
+                System.out.print("Invalid input, please choose again: ");
+                input.next();
             }
+            chosen = input.nextInt();
         }
         return chosen;
     }
 
     public int getQuestionInput() {
         int chosen = 0;
-        if(input.hasNextInt()) {
-            chosen = input.nextInt();
+        while (!input.hasNextInt()) {
+            System.out.print("Invalid input, please choose again: ");
+            input.next();
         }
+
+        chosen = input.nextInt();
         return chosen;
     }
 
     public int getEndOfQuizInput() {
         int chosen = 0;
-        if(input.hasNextInt()) {
-            chosen = input.nextInt();
+        while (!input.hasNextInt()) {
+            System.out.print("Invalid input, please choose again: ");
+            input.next();
         }
+
+        chosen = input.nextInt();
         return chosen;
     }
 }
